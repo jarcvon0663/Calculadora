@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculadora de Costos de Empleados</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Calculadora de Costos de Empleados</h1>
+    <form id="employee-form">
+      <label for="salary">Salario:</label>
+      <input type="text" id="salary" name="salary" value="0">
+      <script>
+        var salary = document.getElementById("salary");
+        var format = new Intl.NumberFormat("es-ES");
+        salary.addEventListener("keyup", function (e) {
+          var value = e.target.value.replace(/\./g, "").replace(/,/g, ".");
+          var position = e.target.selectionStart; // guardar la posición del cursor
+          e.target.value = format.format(value);
+          e.target.selectionEnd = position; // restaurar la posición del cursor
+        });
+      </script>
+      <label for="integral">Integral:</label>
+      <input type="checkbox" id="integral" name="integral">
+      <br>
+      <label for="bonuses">Bonificaciones:</label>
+      <input type="text" id="bonuses" name="bonuses" step="0.01" value="0">
+      <script>
+        var bonuses = document.getElementById("bonuses");
+        var format = new Intl.NumberFormat("es-ES");
+        bonuses.addEventListener("keyup", function(e) {
+          var value = e.target.value.replace(/\./g, "").replace(/,/g, ".");
+          var position = e.target.selectionStart; // guardar la posición del cursor
+          e.target.value = format.format(value);
+          e.target.selectionEnd = position; // restaurar la posición del cursor
+        });
+      </script>
+      <br>
+      <div class="checkbox-container">
+        <input type="checkbox" id="connectivity-bonus" name="connectivity-bonus">
+        <label for="connectivity-bonus">Bono conectividad</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="sura-policy" name="sura-policy">
+        <label for="sura-policy">Póliza Sura</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="life-insurance" name="life-insurance">
+        <label for="life-insurance">Seguro de vida</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="sanitas" name="sanitas">
+        <label for="sanitas">Sanitas</label>
+      </div>
+      <br>
+      <button type="button" onclick="calculateCost()">Calcular</button>
+    </form>
+    <div id="result"></div>
+    
+    <div id="currency-converter">
+      <h3>Convertidor de Moneda</h3>
+      <input type="text" id="amount" name="amount" step="0.01" value="0" oninput="convertCurrency()">
+      <select id="fromCurrency" name="fromCurrency">
+        <option value="COP">Peso Colombiano (COP)</option>
+        <option value="MXN">Peso Mexicano (MXN)</option>
+        <option value="USD">Dólar Estadounidense (USD)</option>
+      </select>
+      <select id="toCurrency" name="toCurrency">
+        <option value="COP">Peso Colombiano (COP)</option>
+        <option value="MXN">Peso Mexicano (MXN)</option>
+        <option value="USD">Dólar Estadounidense (USD)</option>
+      </select>
+      <button type="button" onclick="convertCurrency()">Convertir</button>
+      <div id="conversionResult"></div>
+    </div>
+    <script>
+      function convertCurrency() {
+        var amountInput = document.getElementById('amount');
+        var fromCurrencySelect = document.getElementById('fromCurrency');
+        var toCurrencySelect = document.getElementById('toCurrency');
+        var resultDiv = document.getElementById('conversionResult');
+    
+        var amount = parseFloat(amountInput.value);
+        var fromCurrency = fromCurrencySelect.value;
+        var toCurrency = toCurrencySelect.value;
+    
+        // Realiza la llamada a la API de ExchangeRate-API para obtener el tipo de cambio
+        // Puedes utilizar la librería fetch o axios para realizar la solicitud HTTP
+    
+        // Ejemplo de uso de fetch:
+        fetch('https://api.exchangerate-api.com/v4/latest/' + fromCurrency)
+          .then(response => response.json())
+          .then(data => {
+            var exchangeRate = data.rates[toCurrency];
+            var convertedAmount = amount * exchangeRate;
+            var formattedAmount = convertedAmount.toLocaleString('es');
+            resultDiv.innerHTML = amount.toLocaleString('es') + ' ' + fromCurrency + ' equivale a ' + formattedAmount + ' ' + toCurrency;
+          })
+          .catch(error => {
+            resultDiv.innerHTML = 'Error al obtener el tipo de cambio';
+            console.error(error);
+          });
+      }
+    </script>
+    
+
+
+
+  </div>
+</body>
+
+</html>

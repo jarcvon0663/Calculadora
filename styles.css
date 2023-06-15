@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f3f3;
+  color: #1e3a56;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+select {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #1e3a56;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#result {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#currency-converter {
+  margin-top: 40px;
+}
+
+#currency-converter h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#conversionResult {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1e3a56;
+}
+
+#employee-form .checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#employee-form .checkbox-container input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+#employee-form .checkbox-container label {
+  font-size: 14px;
+  display: inline-block;
+}
