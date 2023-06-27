@@ -64,13 +64,19 @@ button {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  padding: 40px;
+  
 }
 
 #employee-form .checkbox-container input[type="checkbox"] {
   margin-right: 5px;
+  
 }
 
 #employee-form .checkbox-container label {
   font-size: 14px;
   display: inline-block;
+  padding-right: 50px;
+  padding-left: 10px;
 }
+
