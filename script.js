@@ -27,6 +27,14 @@ function calculateCost() {
     return;
   }
 
+  // Limitar el valor de "bonuses" al 40% del salario ingresado
+  var maxBonuses = salary * 0.4;
+  
+  if (bonuses > maxBonuses) {
+    result.innerHTML = 'Las bonificaciones no pueden superar el 40% del salario prestacional, es decir: ' + formatNumber(maxBonuses);
+    return;
+  }
+  
   if (integral) {
     var cost = Math.ceil(salary * 1.27135 + bonuses); // Cálculo del costo según régimen integral
   } else if (salary < 2 * smmlv) {
