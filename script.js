@@ -23,7 +23,7 @@ function calculateCost() {
   var transportAllowance = 140606; // Auxilio de transporte
 
   if (integral && salary <= 15079999) {
-    result.innerHTML = 'El salario debe ser superior a 15079999 para el régimen integral.';
+    result.innerHTML = 'El salario debe ser superior a $15.079.999 para el régimen integral.';
     return;
   }
 
