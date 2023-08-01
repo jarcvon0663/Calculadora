@@ -74,33 +74,46 @@
       <div id="conversionResult"></div>
     </div>
     <script>
-      function convertCurrency() {
-        var amountInput = document.getElementById('amount');
-        var fromCurrencySelect = document.getElementById('fromCurrency');
-        var toCurrencySelect = document.getElementById('toCurrency');
-        var resultDiv = document.getElementById('conversionResult');
-    
-        var amount = parseFloat(amountInput.value);
-        var fromCurrency = fromCurrencySelect.value;
-        var toCurrency = toCurrencySelect.value;
-    
-        // Realiza la llamada a la API de ExchangeRate-API para obtener el tipo de cambio
-        // Puedes utilizar la librería fetch o axios para realizar la solicitud HTTP
-    
-        // Ejemplo de uso de fetch:
-        fetch('https://api.exchangerate-api.com/v4/latest/' + fromCurrency)
-          .then(response => response.json())
-          .then(data => {
-            var exchangeRate = data.rates[toCurrency];
-            var convertedAmount = amount * exchangeRate;
-            var formattedAmount = convertedAmount.toLocaleString('es');
-            resultDiv.innerHTML = amount.toLocaleString('es') + ' ' + fromCurrency + ' equivale a ' + formattedAmount + ' ' + toCurrency;
-          })
-          .catch(error => {
-            resultDiv.innerHTML = 'Error al obtener el tipo de cambio';
-            console.error(error);
-          });
-      }
+	  function convertCurrency() {
+	    var amountInput = document.getElementById('amount');
+	    var fromCurrencySelect = document.getElementById('fromCurrency');
+	    var toCurrencySelect = document.getElementById('toCurrency');
+	    var resultDiv = document.getElementById('conversionResult');
+	
+	    var amount = parseFloat(amountInput.value);
+	    var fromCurrency = fromCurrencySelect.value;
+	    var toCurrency = toCurrencySelect.value;
+	
+	    var exchangeRate;
+	    if (fromCurrency === 'COP' && toCurrency === 'USD') {
+	      // Convertir de pesos colombianos a dólares utilizando la tasa fija de $4,400 COP por dólar
+	      exchangeRate = 1 / 4400;
+	    } else if (fromCurrency === 'USD' && toCurrency === 'COP') {
+	      // Convertir de dólares a pesos colombianos utilizando la tasa fija de $4,400 COP por dólar
+	      exchangeRate = 4400;
+	    } else {
+	      // Realiza la llamada a la API de ExchangeRate-API para obtener el tipo de cambio
+	      fetch('https://api.exchangerate-api.com/v4/latest/' + fromCurrency)
+	        .then(response => response.json())
+	        .then(data => {
+	          exchangeRate = data.rates[toCurrency];
+	          calculateConvertedAmount();
+	        })
+	        .catch(error => {
+	          resultDiv.innerHTML = 'Error al obtener el tipo de cambio';
+	          console.error(error);
+	        });
+	      return;
+	    }
+	
+	    calculateConvertedAmount();
+	
+	    function calculateConvertedAmount() {
+	      var convertedAmount = amount * exchangeRate;
+	      var formattedAmount = convertedAmount.toLocaleString('es');
+	      resultDiv.innerHTML = amount.toLocaleString('es') + ' ' + fromCurrency + ' equivale a ' + formattedAmount + ' ' + toCurrency;
+	    }
+	  }
     </script>
     
   </div>
