@@ -49,13 +49,13 @@ function calculateCost() {
     cost += 60000;
   }
   if (suraPolicy) {
-    cost += 270000;
+    cost += 356256;
   }
   if (sanitas) {
     cost += 270000;
   }
   if (lifeInsurance) {
-    cost += 30000;
+    cost += 20000;
   }
 
   formatInputValue(salaryInput);
