@@ -52,7 +52,7 @@ function calculateCost() {
     cost += 356256;
   }
   if (sanitas) {
-    cost += 270000;
+    cost += 316400;
   }
   if (lifeInsurance) {
     cost += 20000;
