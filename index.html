@@ -86,11 +86,11 @@
 	
 	    var exchangeRate;
 	    if (fromCurrency === 'COP' && toCurrency === 'USD') {
-	      // Convertir de pesos colombianos a dólares utilizando la tasa fija de $4,400 COP por dólar
-	      exchangeRate = 1 / 4400;
+	      // Convertir de pesos colombianos a dólares utilizando la tasa fija de $4,100 COP por dólar
+	      exchangeRate = 1 / 4100;
 	    } else if (fromCurrency === 'USD' && toCurrency === 'COP') {
-	      // Convertir de dólares a pesos colombianos utilizando la tasa fija de $4,400 COP por dólar
-	      exchangeRate = 4400;
+	      // Convertir de dólares a pesos colombianos utilizando la tasa fija de $4,100 COP por dólar
+	      exchangeRate = 4100;
 	    } else {
 	      // Realiza la llamada a la API de ExchangeRate-API para obtener el tipo de cambio
 	      fetch('https://api.exchangerate-api.com/v4/latest/' + fromCurrency)
