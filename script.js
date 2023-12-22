@@ -851,13 +851,13 @@ function calculateCost() {
     cost += 60000;
   }
   if (suraPolicy) {
-    cost += 356256;
+    cost += 339291;
   }
   if (sanitas) {
     cost += 316400;
   }
   if (lifeInsurance) {
-    cost += 20000;
+    cost += 24111;
   }
   
   var departmentSelect = document.getElementById('department');
