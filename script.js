@@ -821,11 +821,11 @@ function calculateCost() {
   var lifeInsurance = document.getElementById('life-insurance').checked;
   var result = document.getElementById('result');
 
-  var smmlv = 1160000; // Valor del salario mínimo mensual legal vigente
-  var transportAllowance = 140606; // Auxilio de transporte
+  var smmlv = 1300000; // Valor del salario mínimo mensual legal vigente
+  var transportAllowance = 162000; // Auxilio de transporte
 
-  if (integral && salary <= 15079999) {
-    result.innerHTML = 'El salario debe ser superior a $15.079.999 para el régimen integral.';
+  if (integral && salary <= 16899999) {
+    result.innerHTML = 'El salario debe ser superior a $16.899.999 para el régimen integral.';
     return;
   }
 
