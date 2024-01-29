@@ -428,7 +428,7 @@ function calculateCost() {
   }
 
   if (connectivityBonus) {
-    cost += 60000;
+    cost += 66000;
   }
   if (suraPolicy) {
     cost += 339291;
