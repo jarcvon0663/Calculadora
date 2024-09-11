@@ -1,5 +1,123 @@
 // Define un objeto JSON con los códigos de AT y sus valores
 var atCodes = {
+  "AMS": [
+    { code: "A0681 / Support Engineer - ERP Bg / COP 2139840.. / USD 534.96", value: 2139840 },
+	{ code: "A0682 / Support Engineer - ERP Jr / COP 2853118.. / USD 713.28", value: 2853118 },
+	{ code: "A0641 / Functional Consultant - ERP Bg / COP 3328687.. / USD 832.172", value: 3328687 },
+	{ code: "A0661 / Software Engineer - ERP Bg / COP 3328687.. / USD 832.172", value: 3328687 },
+	{ code: "A0671 / Soft Eng Sys Admin - ERP Bg / COP 3780426.. / USD 945.107", value: 3780426 },
+	{ code: "A0683 / Support Engineer - ERP Pr / COP 4160822.. / USD 1040.206", value: 4160822 },
+	{ code: "A0651 / Functional ESP-ERP Bg / COP 4755250.. / USD 1188.813", value: 4755250 },
+	{ code: "A0421 / Service Manager ARS -  Bg / COP 4755251.. / USD 1188.813", value: 4755251 },
+	{ code: "A0691 / Tech-Func Lead ERP Bg / COP 4755251.. / USD 1188.813", value: 4755251 },
+	{ code: "A0662 / Software Engineer - ERP JR / COP 5349632.. / USD 1337.408", value: 5349632 },
+	{ code: "A0684 / Support Engineer - ERP  Sr / COP 5349632.. / USD 1337.408", value: 5349632 },
+	{ code: "A0642 / Functional Consultant - ERP Jr / COP 5587382.. / USD 1396.846", value: 5587382 },
+	{ code: "A0422 / Service Manager ARS -  Jr / COP 6538465.. / USD 1634.616", value: 6538465 },
+	{ code: "A0685 / Support Engineer - ERP  Ex / COP 6538465.. / USD 1634.616", value: 6538465 },
+	{ code: "A0672 / Soft Eng Sys Admin - ERP Jr / COP 6741726.. / USD 1685.432", value: 6741726 },
+	{ code: "A0692 / Tech-Func Lead ERP Jr / COP 7727265.. / USD 1931.816", value: 7727265 },
+	{ code: "A0673 / Soft Eng Sys Admin - ERP Pr / COP 9112231.. / USD 2278.058", value: 9112231 },
+	{ code: "A0663 / Software Engineer - ERP Pr / COP 9272727.. / USD 2318.182", value: 9272727 },
+	{ code: "A0643 / Functional Consultant - ERP Pr / COP 9748256.. / USD 2437.064", value: 9748256 },
+	{ code: "A0652 / Functional ESP-ERP Jr / COP 10104875.. / USD 2526.219", value: 10104875 },
+	{ code: "A0423 / Service Manager ARS -  Pr / COP 10104875.. / USD 2526.219", value: 10104875 },
+	{ code: "A0693 / Tech-Func Lead ERP Pr / COP 10886690.. / USD 2721.673", value: 10886690 },
+	{ code: "A0664 / Software Engineer - ERP Sr / COP 11459700.. / USD 2864.925", value: 11459700 },
+	{ code: "A0653 / Functional ESP-ERP Pr / COP 13178657.. / USD 3294.664", value: 13178657 },
+	{ code: "A0424 / Service Manager ARS -  Sr / COP 13178658.. / USD 3294.665", value: 13178658 },
+	{ code: "A0674 / Soft Eng Sys Admin - ERP Sr / COP 13235953.. / USD 3308.988", value: 13235953 },
+	{ code: "A0644 / Functional Consultant - ERP Sr / COP 13751616.. / USD 3437.904", value: 13751616 },
+	{ code: "A0694 / Tech-Func Lead ERP Sr / COP 14324622.. / USD 3581.156", value: 14324622 },
+	{ code: "A0665 / Software Engineer - ERP Ex / COP 15107053.. / USD 3776.763", value: 15107053 },
+	{ code: "A0695 / Tech-Func Lead ERP Ex / COP 16785632.. / USD 4196.408", value: 16785632 },
+	{ code: "A0645 / Functional Consultant - ERP Ex / COP 17345181.. / USD 4336.295", value: 17345181 },
+	{ code: "A0675 / Soft Eng Sys Admin - ERP Ex / COP 17458658.. / USD 4364.665", value: 17458658 },
+	{ code: "A0654 / Functional ESP-ERP Sr / COP 17904643.. / USD 4476.161", value: 17904643 },
+	{ code: "A0425 / Service Manager ARS -  Ex / COP 17904643.. / USD 4476.161", value: 17904643 },
+	{ code: "A0655 / Functional ESP-ERP Ex / COP 20907000.. / USD 5226.75", value: 20907000 }
+ ],
+ "AMS ARS ERP": [
+    { code: "A0101 / Technical Writer ARS  Bg / COP 2.262.624 / USD 566", value: 2262624 },
+	{ code: "A0451 / Process Quality Leader DD -  Bg / COP 2.402.164 / USD 601", value: 2402164 },
+	{ code: "A0381 / Test Engineer ARS -  Tr / COP 2.424.222 / USD 606", value: 2424222 },
+	{ code: "A0102 / Technical Writer ARS  JR / COP 2.585.856 / USD 646", value: 2585856 },
+	{ code: "A0103 / Technical Writer ARS  Pr / COP 2.909.088 / USD 727", value: 2909088 },
+	{ code: "A0382 / Test Engineer ARS -  Bg / COP 2.909.143 / USD 727", value: 2909143 },
+	{ code: "A0091 / Graphical Designer ARS - Web Bg / COP 2.929.387 / USD 732", value: 2929387 },
+	{ code: "A0231 / Software Designer ARS Bg / COP 2.929.387 / USD 732", value: 2929387 },
+	{ code: "A0281 / Software Engineer ARS - Web Tr / COP 3.090.964 / USD 773", value: 3090964 },
+	{ code: "A0291 / Software Engineer ARS - Client Server Tr / COP 3.090.964 / USD 773", value: 3090964 },
+	{ code: "A0301 / Software Engineer ARS - Mainframe Tr / COP 3.090.964 / USD 773", value: 3090964 },
+	{ code: "A0061 / Business Analyst ARS Bg / COP 3.464.733 / USD 866", value: 3464733 },
+	{ code: "A0383 / Test Engineer ARS -  JR / COP 3.709.156 / USD 927", value: 3709156 },
+	{ code: "A0452 / Process Quality Leader DD -  Jr / COP 3.956.390 / USD 989", value: 3956390 },
+	{ code: "A0104 / Technical Writer ARS  Sr / COP 4.063.488 / USD 1.016", value: 4063488 },
+	{ code: "A0282 / Software Engineer ARS - Web Bg / COP 4.203.579 / USD 1.051", value: 4203579 },
+	{ code: "A0292 / Software Engineer ARS - Client Server Bg / COP 4.203.579 / USD 1.051", value: 4203579 },
+	{ code: "A0302 / Software Engineer ARS - Mainframe Bg / COP 4.203.579 / USD 1.051", value: 4203579 },
+	{ code: "A0384 / Test Engineer ARS -  Pr / COP 4.327.350 / USD 1.082", value: 4327350 },
+	{ code: "A0105 / Technical Writer ARS  Ex / COP 4.617.600 / USD 1.154", value: 4617600 },
+	{ code: "A0092 / Graphical Designer ARS - Web JR / COP 4.628.432 / USD 1.157", value: 4628432 },
+	{ code: "A0232 / Software Designer ARS JR / COP 4.628.432 / USD 1.157", value: 4628432 },
+	{ code: "A0062 / Business Analyst ARS JR / COP 4.662.860 / USD 1.166", value: 4662860 },
+	{ code: "A0453 / Process Quality Leader DD -  Pr / COP 5.357.503 / USD 1.339", value: 5357503 },
+	{ code: "A0001 / Project Manager ARS Bg / COP 5.828.475 / USD 1.457", value: 5828475 },
+	{ code: "A0031 / Functional Leader ARS  Bg / COP 5.828.475 / USD 1.457", value: 5828475 },
+	{ code: "A0063 / Business Analyst ARS Pr / COP 5.828.475 / USD 1.457", value: 5828475 },
+	{ code: "A0131 / Technical Leader ARS - Mainframe Bg / COP 5.828.475 / USD 1.457", value: 5828475 },
+	{ code: "A0283 / Software Engineer ARS - Web JR / COP 6.093.406 / USD 1.523", value: 6093406 },
+	{ code: "A0293 / Software Engineer ARS - Client Server JR / COP 6.093.406 / USD 1.523", value: 6093406 },
+	{ code: "A0303 / Software Engineer ARS - Mainframe JR / COP 6.093.406 / USD 1.523", value: 6093406 },
+	{ code: "A0385 / Test Engineer ARS -  Sr / COP 6.181.737 / USD 1.545", value: 6181737 },
+	{ code: "A0111 / Technical Leader ARS - Web Bg / COP 6.709.742 / USD 1.677", value: 6709742 },
+	{ code: "A0121 / Technical Leader ARS - Client Server - Oracle Bg / COP 6.709.742 / USD 1.677", value: 6709742 },
+	{ code: "A0032 / Functional Leader ARS  JR / COP 6.735.198 / USD 1.684", value: 6735198 },
+	{ code: "A0064 / Business Analyst ARS Sr / COP 6.735.198 / USD 1.684", value: 6735198 },
+	{ code: "A0093 / Graphical Designer ARS - Web Pr / COP 6.942.647 / USD 1.736", value: 6942647 },
+	{ code: "A0233 / Software Designer ARS Pr / COP 6.942.647 / USD 1.736", value: 6942647 },
+	{ code: "A0454 / Process Quality Leader DD -  Sr / COP 7.194.398 / USD 1.799", value: 7194398 },
+	{ code: "A0002 / Project Manager ARS JR / COP 7.512.370 / USD 1.878", value: 7512370 },
+	{ code: "A0132 / Technical Leader ARS - Mainframe JR / COP 7.512.370 / USD 1.878", value: 7512370 },
+	{ code: "A0033 / Functional Leader ARS  Pr / COP 7.771.366 / USD 1.943", value: 7771366 },
+	{ code: "A0181 / Software Architect ARS Bg / COP 7.933.051 / USD 1.983", value: 7933051 },
+	{ code: "A0386 / Test Engineer ARS -  Ex / COP 8.159.935 / USD 2.040", value: 8159935 },
+	{ code: "A0112 / Technical Leader ARS - Web JR / COP 8.320.080 / USD 2.080", value: 8320080 },
+	{ code: "A0122 / Technical Leader ARS - Client Server - Oracle JR / COP 8.320.080 / USD 2.080", value: 8320080 },
+	{ code: "A0003 / Project Manager ARS Pr / COP 8.418.997 / USD 2.105", value: 8418997 },
+	{ code: "A0065 / Business Analyst ARS Ex / COP 8.418.997 / USD 2.105", value: 8418997 },
+	{ code: "A0284 / Software Engineer ARS - Web Pr / COP 8.901.829 / USD 2.225", value: 8901829 },
+	{ code: "A0294 / Software Engineer ARS - Client Server Pr / COP 8.901.829 / USD 2.225", value: 8901829 },
+	{ code: "A0304 / Software Engineer ARS - Mainframe Pr / COP 8.901.829 / USD 2.225", value: 8901829 },
+	{ code: "A0034 / Functional Leader ARS  Sr / COP 9.066.627 / USD 2.267", value: 9066627 },
+	{ code: "A0455 / Process Quality Leader DD -  Ex / COP 9.184.342 / USD 2.296", value: 9184342 },
+	{ code: "A0094 / Graphical Designer ARS - Web Sr / COP 9.719.706 / USD 2.430", value: 9719706 },
+	{ code: "A0234 / Software Designer ARS Sr / COP 9.719.706 / USD 2.430", value: 9719706 },
+	{ code: "A0182 / Software Architect ARS JR / COP 9.836.983 / USD 2.459", value: 9836983 },
+	{ code: "A0113 / Technical Leader ARS - Web Pr / COP 10.316.900 / USD 2.579", value: 10316900 },
+	{ code: "A0123 / Technical Leader ARS - Client Server - Oracle Pr / COP 10.316.900 / USD 2.579", value: 10316900 },
+	{ code: "A0133 / Technical Leader ARS - Mainframe Pr / COP 10.439.557 / USD 2.610", value: 10439557 },
+	{ code: "A0004 / Project Manager ARS Sr / COP 10.880.012 / USD 2.720", value: 10880012 },
+	{ code: "A0285 / Software Engineer ARS - Web Sr / COP 11.186.171 / USD 2.797", value: 11186171 },
+	{ code: "A0295 / Software Engineer ARS - Client Server Sr / COP 11.186.171 / USD 2.797", value: 11186171 },
+	{ code: "A0305 / Software Engineer ARS - Mainframe Sr / COP 11.186.171 / USD 2.797", value: 11186171 },
+	{ code: "A0035 / Functional Leader ARS  Ex / COP 11.384.557 / USD 2.846", value: 11384557 },
+	{ code: "A0183 / Software Architect ARS Pr / COP 11.853.121 / USD 2.963", value: 11853121 },
+	{ code: "A0095 / Graphical Designer ARS - Web Ex / COP 12.086.586 / USD 3.022", value: 12086586 },
+	{ code: "A0235 / Software Designer ARS Ex / COP 12.086.586 / USD 3.022", value: 12086586 },
+	{ code: "A0114 / Technical Leader ARS - Web Sr / COP 12.331.948 / USD 3.083", value: 12331948 },
+	{ code: "A0124 / Technical Leader ARS - Client Server - Oracle Sr / COP 12.331.948 / USD 3.083", value: 12331948 },
+	{ code: "A0005 / Project Manager ARS Ex / COP 12.485.623 / USD 3.121", value: 12485623 },
+	{ code: "A0134 / Technical Leader ARS - Mainframe Sr / COP 13.109.924 / USD 3.277", value: 13109924 },
+	{ code: "A0286 / Software Engineer ARS - Web Ex / COP 13.484.427 / USD 3.371", value: 13484427 },
+	{ code: "A0296 / Software Engineer ARS - Client Server Ex / COP 13.484.427 / USD 3.371", value: 13484427 },
+	{ code: "A0306 / Software Engineer ARS - Mainframe Ex / COP 13.484.427 / USD 3.371", value: 13484427 },
+	{ code: "A0115 / Technical Leader ARS - Web Ex / COP 15.291.616 / USD 3.823", value: 15291616 },
+	{ code: "A0125 / Technical Leader ARS - Client Server - Oracle Ex / COP 15.291.616 / USD 3.823", value: 15291616 },
+	{ code: "A0135 / Technical Leader ARS - Mainframe Ex / COP 15.941.924 / USD 3.985", value: 15941924 },
+	{ code: "A0184 / Software Architect ARS Sr / COP 16.051.563 / USD 4.013", value: 16051563 },
+	{ code: "A0185 / Software Architect ARS Ex / COP 22.200.547 / USD 5.550", value: 22200547 }
+  ],
   "AMS GDC": [
     { code: "A0681 / Support Engineer - ERP Bg / COP 2.523.676 / USD 631", value: 2523676 },
 	{ code: "A0682 / Support Engineer - ERP Jr / COP 3.364.907 / USD 841", value: 3364907 },
@@ -97,6 +215,74 @@ var atCodes = {
 	{ code: "A0605 / Support Engineer ARS - Mainframe Ex / COP 29.007.667 / USD 7.252", value: 29007667 },
 	{ code: "A0606 / Support Engineer ARS - Mainframe Ma / COP 33.804.394 / USD 8.451", value: 33804394 }
   ],
+  "APP DEV": [
+    { code: "A0281 / Soft Eng ARS-Web Tr / COP 2.400.000 / USD 600", value: 2400000 },
+	{ code: "A0091 / Graph Des ARS-Web Bg / COP 2.843.150 / USD 711", value: 2843150 },
+	{ code: "A0451 / Proc Qty Lead DD Bg / COP 3.242.924 / USD 811", value: 3242924 },
+	{ code: "A0061 / Busin Analyst ARS Bg / COP 3.362.736 / USD 841", value: 3362736 },
+	{ code: "A0282 / Soft Eng ARS-Web Bg / COP 4.079.831 / USD 1.020", value: 4079831 },
+	{ code: "A0301 / Soft Eng ARS-MF Tr / COP 4.117.529 / USD 1.029", value: 4117529 },
+	{ code: "A0092 / Graph Des ARS-Web Jr / COP 4.492.177 / USD 1.123", value: 4492177 },
+	{ code: "A0452 / Proc Qty Lead DD Jr / COP 4.770.238 / USD 1.193", value: 4770238 },
+	{ code: "A0302 / Soft Eng ARS-MF Bg / COP 5.293.966 / USD 1.323", value: 5293966 },
+	{ code: "A0001 / Proj Manag ARS Bg. / COP 5.656.893 / USD 1.414", value: 5656893 },
+	{ code: "A0031 / Funct Leader ARS Bg / COP 5.656.893 / USD 1.414", value: 5656893 },
+	{ code: "A0131 / Te Lead ARS-Mainf Bg / COP 5.656.893 / USD 1.414", value: 5656893 },
+	{ code: "A0062 / Busin Analyst ARS Jr / COP 5.714.122 / USD 1.429", value: 5714122 },
+	{ code: "A0231 / Soft Designer ARS Bg / COP 5.800.000 / USD 1.450", value: 5800000 },
+	{ code: "A0283 / Soft Eng ARS-Web Jr / COP 5.914.024 / USD 1.479", value: 5914024 },
+	{ code: "A0111 / Tech Lead ARS-Web Bg / COP 6.512.216 / USD 1.628", value: 6512216 },
+	{ code: "A0063 / Busin Analyst ARS Pr / COP 6.685.522 / USD 1.671", value: 6685522 },
+	{ code: "A0093 / Graph Des ARS-Web Pr / COP 6.738.265 / USD 1.685", value: 6738265 },
+	{ code: "A0002 / Proj Manag ARS Jr / COP 6.899.599 / USD 1.725", value: 6899599 },
+	{ code: "A0032 / Funct Leader ARS Jr / COP 6.899.599 / USD 1.725", value: 6899599 },
+	{ code: "A0453 / Proc Qty Lead DD Pr / COP 6.946.579 / USD 1.737", value: 6946579 },
+	{ code: "A0303 / Soft Eng ARS-MF Jr / COP 7.058.621 / USD 1.765", value: 7058621 },
+	{ code: "A0132 / Te Lead ARS-Mainf Jr / COP 7.291.215 / USD 1.823", value: 7291215 },
+	{ code: "A0121 / Tech Lead ARS-C S Bg / COP 7.489.049 / USD 1.872", value: 7489049 },
+	{ code: "A0064 / Busin Analyst ARS Sr / COP 7.822.061 / USD 1.956", value: 7822061 },
+	{ code: "A0232 / Soft Designer ARS Jr / COP 7.842.912 / USD 1.961", value: 7842912 },
+	{ code: "A1212 / Soft Eng-Web Spec Jr / COP 8.066.995 / USD 2.017", value: 8066995 },
+	{ code: "A0112 / Tech Lead ARS-Web Jr / COP 8.075.148 / USD 2.019", value: 8075148 },
+	{ code: "A0003 / Proj Manag ARS Pr / COP 8.415.303 / USD 2.104", value: 8415303 },
+	{ code: "A0033 / Funct Leader ARS Pr / COP 8.415.303 / USD 2.104", value: 8415303 },
+	{ code: "A0284 / Soft Eng ARS-Web Pr / COP 8.639.771 / USD 2.160", value: 8639771 },
+	{ code: "A0454 / Proc Qty Lead DD Sr / COP 8.914.030 / USD 2.229", value: 8914030 },
+	{ code: "A0065 / Busin Analyst ARS Ex / COP 9.151.811 / USD 2.288", value: 9151811 },
+	{ code: "A0122 / Tech Lead ARS-C S Jr / COP 9.286.420 / USD 2.322", value: 9286420 },
+	{ code: "A0304 / Soft Eng ARS-MF Pr / COP 9.411.494 / USD 2.353", value: 9411494 },
+	{ code: "A0094 / Graph Des ARS-Web Sr / COP 9.433.571 / USD 2.358", value: 9433571 },
+	{ code: "A0133 / Te Lead ARS-Mainf Pr / COP 10.132.230 / USD 2.533", value: 10132230 },
+	{ code: "A0004 / Proj Manag ARS Sr / COP 10.263.977 / USD 2.566", value: 10263977 },
+	{ code: "A0034 / Funct Leader ARS Sr / COP 10.263.977 / USD 2.566", value: 10263977 },
+	{ code: "A0113 / Tech Lead ARS-Web Pr / COP 10.909.517 / USD 2.727", value: 10909517 },
+	{ code: "A0233 / Soft Designer ARS Pr / COP 11.204.160 / USD 2.801", value: 11204160 },
+	{ code: "A0455 / Proc Qty Lead DD Ex / COP 11.204.160 / USD 2.801", value: 11204160 },
+	{ code: "A0123 / Tech Lead ARS-C S Pr / COP 11.428.243 / USD 2.857", value: 11428243 },
+	{ code: "A1213 / Soft Eng-Web Spec Pr / COP 11.428.243 / USD 2.857", value: 11428243 },
+	{ code: "A0285 / Soft Eng ARS-Web Sr / COP 11.529.114 / USD 2.882", value: 11529114 },
+	{ code: "A0181 / Softw Archit ARS Bg / COP 12.100.493 / USD 3.025", value: 12100493 },
+	{ code: "A0114 / Tech Lead ARS-Web Sr / COP 12.416.348 / USD 3.104", value: 12416348 },
+	{ code: "A0005 / Proj Manag ARS Ex / COP 12.518.767 / USD 3.130", value: 12518767 },
+	{ code: "A0035 / Funct Leader ARS Ex / COP 12.518.767 / USD 3.130", value: 12518767 },
+	{ code: "A0305 / Soft Eng ARS-MF Sr / COP 12.705.517 / USD 3.176", value: 12705517 },
+	{ code: "A0095 / Graph Des ARS-Web Ex / COP 13.065.639 / USD 3.266", value: 13065639 },
+	{ code: "A0286 / Soft Eng ARS-Web Ex / COP 13.576.714 / USD 3.394", value: 13576714 },
+	{ code: "A0134 / Te Lead ARS-Mainf Sr / COP 13.871.898 / USD 3.468", value: 13871898 },
+	{ code: "A0182 / Softw Archit ARS Jr / COP 14.157.577 / USD 3.539", value: 14157577 },
+	{ code: "A0124 / Tech Lead ARS-C S Sr / COP 14.565.408 / USD 3.641", value: 14565408 },
+	{ code: "A1214 / Soft Eng-Web Spec Sr / COP 15.125.616 / USD 3.781", value: 15125616 },
+	{ code: "A0306 / Soft Eng ARS-MF Ex / COP 15.293.678 / USD 3.823", value: 15293678 },
+	{ code: "A0115 / Tech Lead ARS-Web Ex / COP 16.404.646 / USD 4.101", value: 16404646 },
+	{ code: "A0183 / Softw Archit ARS Pr / COP 16.564.365 / USD 4.141", value: 16564365 },
+	{ code: "A0135 / Te Lead ARS-Mainf Ex / COP 17.602.193 / USD 4.401", value: 17602193 },
+	{ code: "A0234 / Soft Designer ARS Sr / COP 17.926.656 / USD 4.482", value: 17926656 },
+	{ code: "A0125 / Tech Lead ARS-C S Ex / COP 19.047.072 / USD 4.762", value: 19047072 },
+	{ code: "A0184 / Softw Archit ARS Sr / COP 19.380.307 / USD 4.845", value: 19380307 },
+	{ code: "A1215 / Soft Eng-Web Spec Ex / COP 19.831.363 / USD 4.958", value: 19831363 },
+	{ code: "A0235 / Soft Designer ARS Ex / COP 22.408.320 / USD 5.602", value: 22408320 },
+	{ code: "A0185 / Softw Archit ARS Ex / COP 22.674.959 / USD 5.669", value: 22674959 }
+  ],
   "APP DEV GDC": [
 	{ code: "A0451 / Proc Qty Lead DD Bg / COP 4.645.737 / USD 1.161", value: 4645737 },
 	{ code: "A0131 / Te Lead ARS-Mainf Bg / COP 6.222.582 / USD 1.556", value: 6222582 },
@@ -122,6 +308,117 @@ var atCodes = {
 	{ code: "A0135 / Te Lead ARS-Mainf Ex / COP 19.362.413 / USD 4.841", value: 19362413 },
 	{ code: "A0125 / Tech Lead ARS-C S Ex / COP 20.951.779 / USD 5.238", value: 20951779 },
 	{ code: "A1215 / Soft Eng-Web Spec Ex / COP 22.806.068 / USD 5.702", value: 22806068 }
+  ],
+  "BY": [
+	{ code: "A0880 / BLY Serv Manager Tr / COP 5.045.459 / USD 1.261", value: 5045459 },
+	{ code: "A0890 / BLY Tech Architect Tr / COP 5.045.459 / USD 1.261", value: 5045459 },
+	{ code: "A0870 / BLY Tech Consultant Tr / COP 5.045.459 / USD 1.261", value: 5045459 },
+	{ code: "A0900 / BLY Func Architect Tr / COP 5.904.783 / USD 1.476", value: 5904783 },
+	{ code: "A0910 / BLY Func Consultant Tr / COP 5.904.783 / USD 1.476", value: 5904783 },
+	{ code: "A0891 / BLY Tech Architect Bg / COP 6.334.445 / USD 1.584", value: 6334445 },
+	{ code: "A0881 / BLY Serv Manager Bg / COP 6.530.862 / USD 1.633", value: 6530862 },
+	{ code: "A0871 / BLY Tech Consultant Bg / COP 7.813.710 / USD 1.953", value: 7813710 },
+	{ code: "A0860 / BLY Tech Leader Tr / COP 7.899.643 / USD 1.975", value: 7899643 },
+	{ code: "A0882 / BLY Serv Manager Jr / COP 8.194.268 / USD 2.049", value: 8194268 },
+	{ code: "A0901 / BLY Func Architect Bg / COP 8.231.096 / USD 2.058", value: 8231096 },
+	{ code: "A0911 / BLY Func Consultant Bg / COP 8.231.096 / USD 2.058", value: 8231096 },
+	{ code: "A0892 / BLY Tech Architect Jr / COP 8.231.096 / USD 2.058", value: 8231096 },
+	{ code: "A0872 / BLY Tech Consultant Jr / COP 10.692.446 / USD 2.673", value: 10692446 },
+	{ code: "A0861 / BLY Tech Leader Bg / COP 10.692.446 / USD 2.673", value: 10692446 },
+	{ code: "A0902 / BLY Func Architect Jr / COP 10.704.722 / USD 2.676", value: 10704722 },
+	{ code: "A0912 / BLY Func Consultant Jr / COP 10.704.722 / USD 2.676", value: 10704722 },
+	{ code: "A0883 / BLY Serv Manager Pr / COP 11.619.288 / USD 2.905", value: 11619288 },
+	{ code: "A0873 / BLY Tech Consultant Pr / COP 12.447.922 / USD 3.112", value: 12447922 },
+	{ code: "A0903 / BLY Func Architect Pr / COP 13.902.635 / USD 3.476", value: 13902635 },
+	{ code: "A0913 / BLY Func Consultant Pr / COP 13.902.635 / USD 3.476", value: 13902635 },
+	{ code: "A0893 / BLY Tech Architect Pr / COP 13.902.635 / USD 3.476", value: 13902635 },
+	{ code: "A0862 / BLY Tech Leader Jr / COP 15.621.283 / USD 3.905", value: 15621283 },
+	{ code: "A0874 / BLY Tech Consultant Sr / COP 15.725.629 / USD 3.931", value: 15725629 },
+	{ code: "A0884 / BLY Serv Manager Sr / COP 16.225.400 / USD 4.056", value: 16225400 },
+	{ code: "A0904 / BLY Func Architect Sr / COP 18.107.184 / USD 4.527", value: 18107184 },
+	{ code: "A0914 / BLY Func Consultant Sr / COP 18.107.184 / USD 4.527", value: 18107184 },
+	{ code: "A0894 / BLY Tech Architect Sr / COP 18.107.184 / USD 4.527", value: 18107184 },
+	{ code: "A0875 / BLY Tech Consultant Ex / COP 19.881.074 / USD 4.970", value: 19881074 },
+	{ code: "A0885 / BLY Serv Manager Ex / COP 21.982.800 / USD 5.496", value: 21982800 },
+	{ code: "A0863 / BLY Tech Leader Pr / COP 22.477.460 / USD 5.619", value: 22477460 },
+	{ code: "A0905 / BLY Func Architect Ex / COP 23.588.444 / USD 5.897", value: 23588444 },
+	{ code: "A0915 / BLY Func Consultant Ex / COP 23.588.444 / USD 5.897", value: 23588444 },
+	{ code: "A0895 / BLY Tech Architect Ex / COP 23.588.444 / USD 5.897", value: 23588444 },
+	{ code: "A0864 / BLY Tech Leader Sr / COP 30.192.962 / USD 7.548", value: 30192962 },
+	{ code: "A0865 / BLY Tech Leader Ex / COP 37.478.802 / USD 9.370", value: 37478802 }
+  ],
+  "BY GDC": [
+	{ code: "A0880 / BLY Serv Manager Tr / COP 5.045.459 / USD 1.261", value: 5045459 },
+	{ code: "A0890 / BLY Tech Architect Tr / COP 5.045.459 / USD 1.261", value: 5045459 },
+	{ code: "A0870 / BLY Tech Consultant Tr / COP 5.045.459 / USD 1.261", value: 5045459 },
+	{ code: "A0900 / BLY Func Architect Tr / COP 5.904.783 / USD 1.476", value: 5904783 },
+	{ code: "A0910 / BLY Func Consultant Tr / COP 5.904.783 / USD 1.476", value: 5904783 },
+	{ code: "A0891 / BLY Tech Architect Bg / COP 6.334.445 / USD 1.584", value: 6334445 },
+	{ code: "A0881 / BLY Serv Manager Bg / COP 6.530.862 / USD 1.633", value: 6530862 },
+	{ code: "A0871 / BLY Tech Consultant Bg / COP 7.813.710 / USD 1.953", value: 7813710 },
+	{ code: "A0860 / BLY Tech Leader Tr / COP 7.899.643 / USD 1.975", value: 7899643 },
+	{ code: "A0882 / BLY Serv Manager Jr / COP 8.194.268 / USD 2.049", value: 8194268 },
+	{ code: "A0901 / BLY Func Architect Bg / COP 8.231.096 / USD 2.058", value: 8231096 },
+	{ code: "A0911 / BLY Func Consultant Bg / COP 8.231.096 / USD 2.058", value: 8231096 },
+	{ code: "A0892 / BLY Tech Architect Jr / COP 8.231.096 / USD 2.058", value: 8231096 },
+	{ code: "A0872 / BLY Tech Consultant Jr / COP 10.692.446 / USD 2.673", value: 10692446 },
+	{ code: "A0861 / BLY Tech Leader Bg / COP 10.692.446 / USD 2.673", value: 10692446 },
+	{ code: "A0902 / BLY Func Architect Jr / COP 10.704.722 / USD 2.676", value: 10704722 },
+	{ code: "A0912 / BLY Func Consultant Jr / COP 10.704.722 / USD 2.676", value: 10704722 },
+	{ code: "A0883 / BLY Serv Manager Pr / COP 11.619.288 / USD 2.905", value: 11619288 },
+	{ code: "A0873 / BLY Tech Consultant Pr / COP 12.447.922 / USD 3.112", value: 12447922 },
+	{ code: "A0903 / BLY Func Architect Pr / COP 13.902.635 / USD 3.476", value: 13902635 },
+	{ code: "A0913 / BLY Func Consultant Pr / COP 13.902.635 / USD 3.476", value: 13902635 },
+	{ code: "A0893 / BLY Tech Architect Pr / COP 13.902.635 / USD 3.476", value: 13902635 },
+	{ code: "A0862 / BLY Tech Leader Jr / COP 15.621.283 / USD 3.905", value: 15621283 },
+	{ code: "A0874 / BLY Tech Consultant Sr / COP 15.725.629 / USD 3.931", value: 15725629 },
+	{ code: "A0884 / BLY Serv Manager Sr / COP 16.225.400 / USD 4.056", value: 16225400 },
+	{ code: "A0904 / BLY Func Architect Sr / COP 18.107.184 / USD 4.527", value: 18107184 },
+	{ code: "A0914 / BLY Func Consultant Sr / COP 18.107.184 / USD 4.527", value: 18107184 },
+	{ code: "A0894 / BLY Tech Architect Sr / COP 18.107.184 / USD 4.527", value: 18107184 },
+	{ code: "A0875 / BLY Tech Consultant Ex / COP 19.881.074 / USD 4.970", value: 19881074 },
+	{ code: "A0885 / BLY Serv Manager Ex / COP 21.982.800 / USD 5.496", value: 21982800 },
+	{ code: "A0863 / BLY Tech Leader Pr / COP 22.477.460 / USD 5.619", value: 22477460 },
+	{ code: "A0905 / BLY Func Architect Ex / COP 23.588.444 / USD 5.897", value: 23588444 },
+	{ code: "A0915 / BLY Func Consultant Ex / COP 23.588.444 / USD 5.897", value: 23588444 },
+	{ code: "A0895 / BLY Tech Architect Ex / COP 23.588.444 / USD 5.897", value: 23588444 },
+	{ code: "A0864 / BLY Tech Leader Sr / COP 30.192.962 / USD 7.548", value: 30192962 },
+	{ code: "A0865 / BLY Tech Leader Ex / COP 37.478.802 / USD 9.370", value: 37478802 }
+  ],
+  "DIGITAL": [
+	{ code: "A0760 / Digital Developer Tr / COP 2.999.970 / USD 750", value: 2999970 },
+	{ code: "A0801 / Digital Analyst Bg / COP 3.362.736 / USD 841", value: 3362736 },
+	{ code: "A0761 / Digital Developer Bg / COP 4.079.831 / USD 1.020", value: 4079831 },
+	{ code: "A0821 / Digital Leader Bg / COP 5.656.893 / USD 1.414", value: 5656893 },
+	{ code: "A0802 / Digital Analyst Jr / COP 5.714.122 / USD 1.429", value: 5714122 },
+	{ code: "A0752 / Digital Designer Jr / COP 5.730.912 / USD 1.433", value: 5730912 },
+	{ code: "A0762 / Digital Developer Jr / COP 5.914.024 / USD 1.479", value: 5914024 },
+	{ code: "A0831 / Digital Manager Bg / COP 6.505.427 / USD 1.626", value: 6505427 },
+	{ code: "A0822 / Digital Leader Jr / COP 6.536.923 / USD 1.634", value: 6536923 },
+	{ code: "A0803 / Digital Analyst Pr / COP 6.685.522 / USD 1.671", value: 6685522 },
+	{ code: "A0823 / Digital Leader Pr / COP 7.542.588 / USD 1.886", value: 7542588 },
+	{ code: "A0804 / Digital Analyst Sr / COP 7.822.061 / USD 1.956", value: 7822061 },
+	{ code: "A0753 / Digital Designer Pr / COP 8.036.160 / USD 2.009", value: 8036160 },
+	{ code: "A0763 / Digital Developer Pr / COP 8.639.771 / USD 2.160", value: 8639771 },
+	{ code: "A0824 / Digital Leader Sr / COP 8.799.718 / USD 2.200", value: 8799718 },
+	{ code: "A0832 / Digital Manager Jr / COP 8.945.106 / USD 2.236", value: 8945106 },
+	{ code: "A0805 / Digital Analyst Ex / COP 9.151.811 / USD 2.288", value: 9151811 },
+	{ code: "A0754 / Digital Designer Sr / COP 10.534.656 / USD 2.634", value: 10534656 },
+	{ code: "A0792 / Digital Architect Jr / COP 11.190.115 / USD 2.798", value: 11190115 },
+	{ code: "A0825 / Digital Leader Ex / COP 11.462.472 / USD 2.866", value: 11462472 },
+	{ code: "A0764 / Digital Developer Sr / COP 11.529.114 / USD 2.882", value: 11529114 },
+	{ code: "A0755 / Digital Designer Ex / COP 12.815.535 / USD 3.204", value: 12815535 },
+	{ code: "A0833 / Digital Manager Pr / COP 12.884.784 / USD 3.221", value: 12884784 },
+	{ code: "A0782 / DigitalSpecialist Jr / COP 13.141.759 / USD 3.285", value: 13141759 },
+	{ code: "A0793 / Digital Architect Pr / COP 13.549.970 / USD 3.387", value: 13549970 },
+	{ code: "A0765 / Digital Developer Ex / COP 13.576.714 / USD 3.394", value: 13576714 },
+	{ code: "A0783 / DigitalSpecialist Pr / COP 15.833.444 / USD 3.958", value: 15833444 },
+	{ code: "A0834 / Digital Manager Sr / COP 16.806.240 / USD 4.202", value: 16806240 },
+	{ code: "A0794 / Digital Architect Sr / COP 17.926.025 / USD 4.482", value: 17926025 },
+	{ code: "A0784 / DigitalSpecialist Sr / COP 19.076.439 / USD 4.769", value: 19076439 },
+	{ code: "A0835 / Digital Manager Ex / COP 20.727.696 / USD 5.182", value: 20727696 },
+	{ code: "A0795 / Digital Architect Ex / COP 22.035.710 / USD 5.509", value: 22035710 },
+	{ code: "A0785 / DigitalSpecialist Ex / COP 22.983.661 / USD 5.746", value: 22983661 }
   ],
   "DIGITAL GDC": [
     { code: "A0750 / Digital Designer Tr / COP 3.127.465 / USD 782", value: 3127465 },
@@ -162,6 +459,50 @@ var atCodes = {
 	{ code: "A0794 / Digital Architect Sr / COP 24.919.845 / USD 6.230", value: 24919845 },
 	{ code: "A0795 / Digital Architect Ex / COP 30.173.027 / USD 7.543", value: 30173027 }
   ],
+  "ERP PROY": [
+    { code: "A0311 / Soft Eng Sys ERP Bg / COP 3.500.000 / USD 875", value: 3500000 },
+	{ code: "A0322 / Soft Eng ARS-ERP Bg / COP 3.500.000 / USD 875", value: 3500000 },
+	{ code: "A0161 / Soft Eng BI - ERP Bg / COP 3.750.000 / USD 938", value: 3750000 },
+	{ code: "A0441 / Func Cons ARS-ERP Bg / COP 3.750.000 / USD 938", value: 3750000 },
+	{ code: "A0051 / Tech-Func LeadERP Bg / COP 5.000.000 / USD 1.250", value: 5000000 },
+	{ code: "A0312 / Soft Eng Sys ERP Jr / COP 6.000.001 / USD 1.500", value: 6000001 },
+	{ code: "A0323 / Soft Eng ARS-ERP Jr / COP 6.000.001 / USD 1.500", value: 6000001 },
+	{ code: "A0011 / Proj Manager ERP Bg / COP 6.250.000 / USD 1.563", value: 6250000 },
+	{ code: "A0162 / Soft Eng BI - ERP Jr / COP 7.000.001 / USD 1.750", value: 7000001 },
+	{ code: "A0442 / Func Cons ARS-ERP Jr / COP 7.000.001 / USD 1.750", value: 7000001 },
+	{ code: "A0041 / Proj Director ERP Bg / COP 7.850.000 / USD 1.963", value: 7850000 },
+	{ code: "A0052 / Tech-Func LeadERP Jr / COP 8.250.001 / USD 2.063", value: 8250001 },
+	{ code: "A0012 / Proj Manager ERP Jr / COP 10.000.001 / USD 2.500", value: 10000001 },
+	{ code: "A0313 / Soft Eng Sys ERP Pr / COP 10.750.001 / USD 2.688", value: 10750001 },
+	{ code: "A0324 / Soft Eng ARS-ERP Pr / COP 10.750.001 / USD 2.688", value: 10750001 },
+	{ code: "A0042 / Proj Director ERP Jr / COP 11.100.001 / USD 2.775", value: 11100001 },
+	{ code: "A0163 / Soft Eng BI - ERP Pr / COP 11.500.001 / USD 2.875", value: 11500001 },
+	{ code: "A0443 / Func Cons ARS-ERP Pr / COP 11.500.001 / USD 2.875", value: 11500001 },
+	{ code: "A0053 / Tech-Func LeadERP Pr / COP 13.000.001 / USD 3.250", value: 13000001 },
+	{ code: "A0013 / Proj Manager ERP Pr / COP 14.500.001 / USD 3.625", value: 14500001 },
+	{ code: "A0043 / Proj Director ERP Pr / COP 16.000.001 / USD 4.000", value: 16000001 },
+	{ code: "A0314 / Soft Eng Sys ERP Sr / COP 17.500.001 / USD 4.375", value: 17500001 },
+	{ code: "A0325 / Soft Eng ARS-ERP Sr / COP 17.500.001 / USD 4.375", value: 17500001 },
+	{ code: "A0164 / Soft Eng BI - ERP Sr / COP 19.000.001 / USD 4.750", value: 19000001 },
+	{ code: "A0444 / Func Cons ARS-ERP Sr / COP 19.000.001 / USD 4.750", value: 19000001 },
+	{ code: "A0014 / Proj Manager ERP Sr / COP 20.000.001 / USD 5.000", value: 20000001 },
+	{ code: "A0054 / Tech-Func LeadERP Sr / COP 20.500.001 / USD 5.125", value: 20500001 },
+	{ code: "A0044 / Proj Director ERP Sr / COP 22.000.001 / USD 5.500", value: 22000001 },
+	{ code: "A0315 / Soft Eng Sys ERP Ex / COP 22.500.001 / USD 5.625", value: 22500001 },
+	{ code: "A0326 / Soft Eng ARS-ERP Ex / COP 22.500.001 / USD 5.625", value: 22500001 },
+	{ code: "A0015 / Proj Manager ERP Ex / COP 25.000.001 / USD 6.250", value: 25000001 },
+	{ code: "A0165 / Soft Eng BI - ERP Ex / COP 25.000.001 / USD 6.250", value: 25000001 },
+	{ code: "A0445 / Func Cons ARS-ERP Ex / COP 25.000.001 / USD 6.250", value: 25000001 },
+	{ code: "A0316 / Soft Eng Sys ERP Ma / COP 25.500.001 / USD 6.375", value: 25500001 },
+	{ code: "A0327 / Soft Eng ARS-ERP Ma / COP 25.500.001 / USD 6.375", value: 25500001 },
+	{ code: "A0055 / Tech-Func LeadERP Ex / COP 26.000.001 / USD 6.500", value: 26000001 },
+	{ code: "A0045 / Proj Director ERP Ex / COP 26.500.001 / USD 6.625", value: 26500001 },
+	{ code: "A0016 / Proj Manager ERP Ma / COP 28.000.001 / USD 7.000", value: 28000001 },
+	{ code: "A0166 / Soft Eng BI - ERP Ma / COP 28.000.001 / USD 7.000", value: 28000001 },
+	{ code: "A0056 / Tech-Func LeadERP Ma / COP 28.500.001 / USD 7.125", value: 28500001 },
+	{ code: "A0046 / Proj Director ERP Ma / COP 29.000.001 / USD 7.250", value: 29000001 },
+	{ code: "A0446 / Func Cons ARS-ERP Ma / COP 30.000.001 / USD 7.500", value: 30000001 }
+ ],
   "ERP GDC": [
     { code: "A0311 / Soft Eng Sys ERP Bg / COP 4.025.000 / USD 1.006", value: 4025000 },
 	{ code: "A0322 / Soft Eng ARS-ERP Bg / COP 4.025.000 / USD 1.006", value: 4025000 },
@@ -235,6 +576,97 @@ var atCodes = {
 	{ code: "A0555 / InfoSec Manager -  Ex / COP 20200000.. / USD 5050.", value: 21331200 },
 	{ code: "A0536 / Security IT Auditor -  Ma / COP 24885000.. / USD 6221.25", value: 26278560 },
 	{ code: "A0556 / InfoSec Manager -  Ma / COP 24885000.. / USD 6221.25", value: 26278560 }
+  ],
+  "ITIS": [
+    { code: "A0471 / Help D-ITIS-S Sup Tr / COP 2.091.134 / USD 523", value: 2091134 },
+	{ code: "A1190 / Storage Tr / COP 2.313.360 / USD 578", value: 2313360 },
+	{ code: "A0481 / Sup Eng-ITIS Desk Bg / COP 2.423.352 / USD 606", value: 2423352 },
+	{ code: "A0472 / Help D-ITIS-S Sup Bg / COP 2.607.277 / USD 652", value: 2607277 },
+	{ code: "A0851 / ITIS Data Center Facilities Bg / COP 3.150.000 / USD 788", value: 3150000 },
+	{ code: "A0631 / ProcQ Leader ITIS Bg / COP 3.183.832 / USD 796", value: 3183832 },
+	{ code: "A0340 / DBA ARS Tr / COP 3.278.652 / USD 820", value: 3278652 },
+	{ code: "A0510 / Sup Eng-ITIS Telc Tr  / COP 3.377.024 / USD 844", value: 3377024 },
+	{ code: "A0482 / Sup Eng-ITIS Desk Jr / COP 3.430.627 / USD 858", value: 3430627 },
+	{ code: "A0490 / S Eng-ITIS Server Tr / COP 3.503.225 / USD 876", value: 3503225 },
+	{ code: "A0473 / Help D-ITIS-S Sup Jr / COP 3.533.546 / USD 883", value: 3533546 },
+	{ code: "A0501 / Sup Eng-ITIS Syst Bg / COP 3.598.686 / USD 900", value: 3598686 },
+	{ code: "A1160 / Cloud Tr / COP 3.815.000 / USD 954", value: 3815000 },
+	{ code: "A0483 / Sup Eng-ITIS Desk Pr / COP 3.887.730 / USD 972", value: 3887730 },
+	{ code: "A0511 / Sup Eng-ITIS Telc Bg / COP 4.181.077 / USD 1.045", value: 4181077 },
+	{ code: "A0474 / Help D-ITIS-S Sup Pr / COP 4.348.980 / USD 1.087", value: 4348980 },
+	{ code: "A1191 / Storage Bg / COP 4.360.001 / USD 1.090", value: 4360001 },
+	{ code: "A0341 / DBA ARS Bg / COP 4.383.225 / USD 1.096", value: 4383225 },
+	{ code: "A0491 / S Eng-ITIS Server Bg / COP 4.383.225 / USD 1.096", value: 4383225 },
+	{ code: "A0502 / Sup Eng-ITIS Syst Jr / COP 4.401.702 / USD 1.100", value: 4401702 },
+	{ code: "A0632 / ProcQ Leader ITIS Jr / COP 4.463.316 / USD 1.116", value: 4463316 },
+	{ code: "A1200 / Process Automatio Tr / COP 4.469.000 / USD 1.117", value: 4469000 },
+	{ code: "A0484 / Sup Eng-ITIS Desk Sr / COP 4.535.685 / USD 1.134", value: 4535685 },
+	{ code: "A1161 / Cloud Bg / COP 4.905.000 / USD 1.226", value: 4905000 },
+	{ code: "A1180 / Middleware Tr / COP 4.905.000 / USD 1.226", value: 4905000 },
+	{ code: "A0475 / Help D-ITIS-S Sup Sr / COP 5.028.508 / USD 1.257", value: 5028508 },
+	{ code: "A0512 / Sup Eng-ITIS Telc Jr / COP 5.121.436 / USD 1.280", value: 5121436 },
+	{ code: "A1201 / Process Automatio Bg / COP 5.123.000 / USD 1.281", value: 5123000 },
+	{ code: "A0461 / Serv Manager ITIS-Bg / COP 5.321.666 / USD 1.330", value: 5321666 },
+	{ code: "A0485 / Sup Eng-ITIS Desk Ex / COP 5.442.822 / USD 1.361", value: 5442822 },
+	{ code: "A0852 / ITIS Data Center Facilities Jr / COP 5.565.000 / USD 1.391", value: 5565000 },
+	{ code: "A0476 / Help D-ITIS-S Sup Ex / COP 5.640.762 / USD 1.410", value: 5640762 },
+	{ code: "A1192 / Storage Jr / COP 5.940.501 / USD 1.485", value: 5940501 },
+	{ code: "A1181 / Middleware Bg / COP 5.995.000 / USD 1.499", value: 5995000 },
+	{ code: "A0633 / ProcQ Leader ITIS Pr / COP 6.171.000 / USD 1.543", value: 6171000 },
+	{ code: "A1162 / Cloud Jr / COP 6.213.000 / USD 1.553", value: 6213000 },
+	{ code: "A0492 / S Eng-ITIS Server Jr / COP 6.259.245 / USD 1.565", value: 6259245 },
+	{ code: "A0486 / Sup Eng-ITIS Desk Ma / COP 6.600.000 / USD 1.650", value: 6600000 },
+	{ code: "A0477 / Help D-ITIS-S Sup Ma / COP 6.646.200 / USD 1.662", value: 6646200 },
+	{ code: "A0503 / Sup Eng-ITIS Syst Pr / COP 6.688.823 / USD 1.672", value: 6688823 },
+	{ code: "A0462 / Serv Manager ITIS-Jr / COP 7.288.369 / USD 1.822", value: 7288369 },
+	{ code: "A1182 / Middleware Jr / COP 7.303.000 / USD 1.826", value: 7303000 },
+	{ code: "A1202 / Process Automatio Jr / COP 7.303.000 / USD 1.826", value: 7303000 },
+	{ code: "A0342 / DBA ARS Jr / COP 7.349.106 / USD 1.837", value: 7349106 },
+	{ code: "A0513 / Sup Eng-ITIS Telc Pr / COP 7.619.260 / USD 1.905", value: 7619260 },
+	{ code: "A0493 / S Eng-ITIS Server Pr / COP 7.890.443 / USD 1.973", value: 7890443 },
+	{ code: "A1193 / Storage Pr / COP 7.957.001 / USD 1.989", value: 7957001 },
+	{ code: "A0504 / Sup Eng-ITIS Syst Sr / COP 8.582.119 / USD 2.146", value: 8582119 },
+	{ code: "A0853 / ITIS Data Center Facilities Pr / COP 8.715.000 / USD 2.179", value: 8715000 },
+	{ code: "A0634 / ProcQ Leader ITIS Sr / COP 8.751.600 / USD 2.188", value: 8751600 },
+	{ code: "A0463 / Serv Manager ITIS-Pr / COP 8.936.929 / USD 2.234", value: 8936929 },
+	{ code: "A1163 / Cloud Pr / COP 9.047.000 / USD 2.262", value: 9047000 },
+	{ code: "A0635 / ProcQ Leader ITIS Ex / COP 9.900.000 / USD 2.475", value: 9900000 },
+	{ code: "A0343 / DBA ARS Pr / COP 9.933.150 / USD 2.483", value: 9933150 },
+	{ code: "A1203 / Process Automatio Pr / COP 10.464.000 / USD 2.616", value: 10464000 },
+	{ code: "A1183 / Middleware Pr / COP 10.682.000 / USD 2.671", value: 10682000 },
+	{ code: "A1194 / Storage Sr / COP 10.736.501 / USD 2.684", value: 10736501 },
+	{ code: "A0494 / S Eng-ITIS Server Sr / COP 10.810.800 / USD 2.703", value: 10810800 },
+	{ code: "A0854 / ITIS Data Center Facilities Sr / COP 11.235.000 / USD 2.809", value: 11235000 },
+	{ code: "A0505 / Sup Eng-ITIS Syst Ex / COP 11.680.767 / USD 2.920", value: 11680767 },
+	{ code: "A1164 / Cloud Sr / COP 11.772.000 / USD 2.943", value: 11772000 },
+	{ code: "A0495 / S Eng-ITIS Server Ex / COP 11.880.000 / USD 2.970", value: 11880000 },
+	{ code: "A0464 / Serv Manager ITIS-Sr / COP 12.147.282 / USD 3.037", value: 12147282 },
+	{ code: "A0514 / Sup Eng-ITIS Telc Sr / COP 12.302.327 / USD 3.076", value: 12302327 },
+	{ code: "A1204 / Process Automatio Sr / COP 12.971.000 / USD 3.243", value: 12971000 },
+	{ code: "A1195 / Storage Ex / COP 13.897.501 / USD 3.474", value: 13897501 },
+	{ code: "A1184 / Middleware Sr / COP 13.952.000 / USD 3.488", value: 13952000 },
+	{ code: "A1172 / Architect Jr / COP 13.965.000 / USD 3.491", value: 13965000 },
+	{ code: "A0855 / ITIS Data Center Facilities Ex / COP 14.385.000 / USD 3.596", value: 14385000 },
+	{ code: "A0465 / Serv Manager ITIS-Ex / COP 14.545.859 / USD 3.636", value: 14545859 },
+	{ code: "A1205 / Process Automatio Ex / COP 14.606.000 / USD 3.652", value: 14606000 },
+	{ code: "A0506 / Sup Eng-ITIS Syst Ma / COP 14.878.500 / USD 3.720", value: 14878500 },
+	{ code: "A1165 / Cloud Ex / COP 14.933.000 / USD 3.733", value: 14933000 },
+	{ code: "A0344 / DBA ARS Sr / COP 14.967.761 / USD 3.742", value: 14967761 },
+	{ code: "A0515 / Sup Eng-ITIS Telc Ex / COP 15.437.822 / USD 3.859", value: 15437822 },
+	{ code: "A0496 / S Eng-ITIS Server Ma / COP 15.845.500 / USD 3.961", value: 15845500 },
+	{ code: "A0466 / Serv Manager ITIS-Ma / COP 15.955.968 / USD 3.989", value: 15955968 },
+	{ code: "A1185 / Middleware Ex / COP 16.275.000 / USD 4.069", value: 16275000 },
+	{ code: "A1196 / Storage Ma / COP 16.275.001 / USD 4.069", value: 16275001 },
+	{ code: "A1173 / Architect Pr / COP 17.325.000 / USD 4.331", value: 17325000 },
+	{ code: "A1206 / Process Automatio Ma / COP 17.325.000 / USD 4.331", value: 17325000 },
+	{ code: "A1166 / Cloud Ma / COP 18.312.000 / USD 4.578", value: 18312000 },
+	{ code: "A0345 / DBA ARS Ex / COP 18.650.100 / USD 4.663", value: 18650100 },
+	{ code: "A0516 / Sup Eng-ITIS Telc Ma / COP 19.183.500 / USD 4.796", value: 19183500 },
+	{ code: "A1186 / Middleware Ma / COP 19.215.000 / USD 4.804", value: 19215000 },
+	{ code: "A1174 / Architect Sr / COP 19.530.000 / USD 4.883", value: 19530000 },
+	{ code: "A0346 / DBA ARS Ma / COP 21.367.500 / USD 5.342", value: 21367500 },
+	{ code: "A1175 / Architect Ex / COP 23.940.000 / USD 5.985", value: 23940000 },
+	{ code: "A1176 / Architect Ma / COP 27.090.000 / USD 6.773", value: 27090000 }
   ],
   "ITIS GDC": [
     { code: "A0471 / Help D-ITIS-S Sup Tr / COP 2.126.577 / USD 532", value: 2126577 },
@@ -328,6 +760,56 @@ var atCodes = {
 	{ code: "A1175 / Architect Ex / COP 31.680.000 / USD 7.920", value: 31680000 },
 	{ code: "A1176 / Architect Ma / COP 33.880.000 / USD 8.470", value: 33880000 }
   ],
+  "QA&VALIDAT": [
+	{ code: "A0381 / Test Engineer ARS-Tr / COP 2.323.200 / USD 581", value: 2323200 },
+	{ code: "A0382 / Test Engineer ARS-Bg / COP 2.851.200 / USD 713", value: 2851200 },
+	{ code: "A0383 / Test Engineer ARS-Jr / COP 3.696.000 / USD 924", value: 3696000 },
+	{ code: "A0384 / Test Engineer ARS-Pr / COP 4.963.200 / USD 1.241", value: 4963200 },
+	{ code: "A0391 / Aut Test Eng ARS-Tr / COP 5.041.872 / USD 1.260", value: 5041872 },
+	{ code: "A1100 / Software Test Tr / COP 5.377.997 / USD 1.344", value: 5377997 },
+	{ code: "A0392 / Aut Test Eng ARS-Bg / COP 5.898.990 / USD 1.475", value: 5898990 },
+	{ code: "A1131 / Hybrid Test Eng Bg / COP 6.248.559 / USD 1.562", value: 6248559 },
+	{ code: "A1101 / Software Test Bg / COP 6.292.256 / USD 1.573", value: 6292256 },
+	{ code: "A0393 / Aut Test Eng ARS-Jr / COP 6.901.819 / USD 1.725", value: 6901819 },
+	{ code: "A0371 / Test Leader ARS - Bg / COP 6.946.579 / USD 1.737", value: 6946579 },
+	{ code: "A1111 / SDET Bg / COP 7.209.875 / USD 1.802", value: 7209875 },
+	{ code: "A1121 / Performance Test Bg / COP 7.209.875 / USD 1.802", value: 7209875 },
+	{ code: "A1102 / Software Test Jr / COP 7.361.940 / USD 1.840", value: 7361940 },
+	{ code: "A0385 / Test Engineer ARS-Sr / COP 7.920.000 / USD 1.980", value: 7920000 },
+	{ code: "A0394 / Aut Test Eng ARS-Pr / COP 8.075.128 / USD 2.019", value: 8075128 },
+	{ code: "A0372 / Test Leader ARS - Jr / COP 8.127.498 / USD 2.032", value: 8127498 },
+	{ code: "A1132 / Hybrid Test Eng Jr / COP 8.335.734 / USD 2.084", value: 8335734 },
+	{ code: "A1103 / Software Test Pr / COP 8.613.470 / USD 2.153", value: 8613470 },
+	{ code: "A0395 / Aut Test Eng ARS-Sr / COP 9.447.899 / USD 2.362", value: 9447899 },
+	{ code: "A0373 / Test Leader ARS - Pr / COP 9.509.172 / USD 2.377", value: 9509172 },
+	{ code: "A1122 / Performance Test Jr / COP 9.618.154 / USD 2.405", value: 9618154 },
+	{ code: "A1104 / Software Test Sr / COP 10.077.759 / USD 2.519", value: 10077759 },
+	{ code: "A0386 / Test Engineer ARS-Ex / COP 10.560.000 / USD 2.640", value: 10560000 },
+	{ code: "A0396 / Aut Test Eng ARS-Ex / COP 11.054.042 / USD 2.764", value: 11054042 },
+	{ code: "A1133 / Hybrid Test Eng Pr / COP 11.120.078 / USD 2.780", value: 11120078 },
+	{ code: "A0374 / Test Leader ARS - Sr / COP 11.125.732 / USD 2.781", value: 11125732 },
+	{ code: "A1105 / Software Test Ex / COP 11.790.979 / USD 2.948", value: 11790979 },
+	{ code: "A1112 / SDET Jr / COP 12.016.460 / USD 3.004", value: 12016460 },
+	{ code: "A1123 / Performance Test Pr / COP 12.830.858 / USD 3.208", value: 12830858 },
+	{ code: "A0397 / Aut Test Eng ARS-Ma / COP 12.933.230 / USD 3.233", value: 12933230 },
+	{ code: "A0375 / Test Leader ARS - Ex / COP 13.017.106 / USD 3.254", value: 13017106 },
+	{ code: "A1113 / SDET Pr / COP 13.218.107 / USD 3.305", value: 13218107 },
+	{ code: "A0387 / Test Engineer ARS-Ma / COP 13.728.000 / USD 3.432", value: 13728000 },
+	{ code: "A1106 / Software Test Ma / COP 13.795.445 / USD 3.449", value: 13795445 },
+	{ code: "A0363 / QA Manager ARS -  Pr / COP 14.556.918 / USD 3.639", value: 14556918 },
+	{ code: "A1134 / Hybrid Test Eng Sr / COP 14.834.462 / USD 3.709", value: 14834462 },
+	{ code: "A0364 / QA Manager ARS -  Sr / COP 17.031.595 / USD 4.258", value: 17031595 },
+	{ code: "A1124 / Performance Test Sr / COP 17.116.685 / USD 4.279", value: 17116685 },
+	{ code: "A1114 / SDET Sr / COP 18.733.354 / USD 4.683", value: 18733354 },
+	{ code: "A1135 / Hybrid Test Eng Ex / COP 19.789.543 / USD 4.947", value: 19789543 },
+	{ code: "A0365 / QA Manager ARS -  Ex / COP 19.926.966 / USD 4.982", value: 19926966 },
+	{ code: "A1115 / SDET Ex / COP 22.667.358 / USD 5.667", value: 22667358 },
+	{ code: "A1125 / Performance Test Ex / COP 22.834.086 / USD 5.709", value: 22834086 },
+	{ code: "A0366 / QA Manager ARS -  Ma / COP 23.314.550 / USD 5.829", value: 23314550 },
+	{ code: "A1116 / SDET Ma / COP 24.934.096 / USD 6.234", value: 24934096 },
+	{ code: "A1136 / Hybrid Test Eng Ma / COP 26.399.745 / USD 6.600", value: 26399745 },
+	{ code: "A1126 / Performance Test Ma / COP 30.461.241 / USD 7.615", value: 30461241 }
+  ],
   "QA&VALIDAT GDC": [
 	{ code: "A0381 / Test Engineer ARS-Tr / COP 2.956.800 / USD 739", value: 2956800 },
 	{ code: "A0382 / Test Engineer ARS-Bg / COP 3.696.000 / USD 924", value: 3696000 },
@@ -385,7 +867,7 @@ function formatNumber(number) {
 }
 
 function formatInputValue(input) {
-  var value = input.value.replace(/\./g, '');
+  var value = input.value.replace(/\./g, '').replace(/,/g, ".");
   input.value = formatNumber(value);
 }
 
@@ -393,7 +875,7 @@ function calculateCost() {
   var salaryInput = document.getElementById('salary');
   var bonusesInput = document.getElementById('bonuses');
   var salary = parseFloat(salaryInput.value.replace(/\./g, ''));
-  var bonuses = parseFloat(bonusesInput.value.replace(/\./g, ''));
+  var bonuses = parseFloat(bonusesInput.value.replace(/\./g, '')) || 0;
   var integral = document.getElementById('integral').checked;
   var connectivityBonus = document.getElementById('connectivity-bonus').checked;
   var suraPolicy = document.getElementById('sura-policy').checked;
@@ -401,7 +883,7 @@ function calculateCost() {
   var lifeInsurance = document.getElementById('life-insurance').checked;
   var result = document.getElementById('result');
 
-  var smmlv = 1300000; // Valor del salario mínimo mensual legal vigente
+  var smmlv = 1300000; // Salario mínimo
   var transportAllowance = 162000; // Auxilio de transporte
 
   if (integral && salary <= 16899999) {
@@ -409,37 +891,28 @@ function calculateCost() {
     return;
   }
 
-  // Limitar el valor de "bonuses" al 40% del salario ingresado
   var maxBonuses = salary * 0.4;
-  
   if (bonuses > maxBonuses) {
     result.innerHTML = 'Las bonificaciones no pueden superar el 40% del salario prestacional, es decir: ' + formatNumber(maxBonuses);
     return;
   }
-  
+
+  var cost = 0;
   if (integral) {
-    var cost = Math.ceil(salary * 1.27135 + bonuses); // Cálculo del costo según régimen integral
+    cost = Math.ceil(salary * 1.27135 + bonuses);
   } else if (salary < 2 * smmlv) {
-    var cost = Math.ceil(salary * 1.40308 + transportAllowance + 45000 + bonuses); // Cálculo del costo según escenario 1
+    cost = Math.ceil(salary * 1.40308 + transportAllowance + 45000 + bonuses);
   } else if (salary + bonuses < 10 * smmlv) {
-    var cost = Math.ceil(salary * 1.40308 + bonuses); // Cálculo del costo según escenario 2
+    cost = Math.ceil(salary * 1.40308 + bonuses);
   } else {
-    var cost = Math.ceil(salary * 1.53808 + bonuses); // Cálculo del costo según escenario 3
+    cost = Math.ceil(salary * 1.53808 + bonuses);
   }
 
-  if (connectivityBonus) {
-    cost += 66000;
-  }
-  if (suraPolicy) {
-    cost += 339291;
-  }
-  if (sanitas) {
-    cost += 316400;
-  }
-  if (lifeInsurance) {
-    cost += 24111;
-  }
-  
+  if (connectivityBonus) cost += 66000;
+  if (suraPolicy) cost += 339291;
+  if (sanitas) cost += 316400;
+  if (lifeInsurance) cost += 24111;
+
   var departmentSelect = document.getElementById('department');
   var selectedDepartment = departmentSelect.value;
   var departmentATs = atCodes[selectedDepartment];
@@ -452,16 +925,15 @@ function calculateCost() {
         break;
       }
     }
-
     if (nextAT) {
-      result.innerHTML = 'El costo total del empleado es: $' + formatNumber(cost) + '<br>' + '<br>';
+      result.innerHTML = 'El costo total del empleado es: $' + formatNumber(cost) + '<br><br>';
       result.innerHTML += 'Código de AT para la práctica ' + selectedDepartment + ': ' + nextAT;
     } else {
-      result.innerHTML = 'El costo total del empleado es: $' + formatNumber(cost) + '<br>' + '<br>';
+      result.innerHTML = 'El costo total del empleado es: $' + formatNumber(cost) + '<br><br>';
       result.innerHTML += 'No se encontró un código de AT adecuado para la práctica ' + selectedDepartment;
     }
   } else {
-    result.innerHTML = 'El costo total del empleado es: $' + formatNumber(cost) + '<br>' + '<br>';
+    result.innerHTML = 'El costo total del empleado es: $' + formatNumber(cost) + '<br><br>';
     result.innerHTML += 'No se encontraron códigos de AT para la práctica ' + selectedDepartment;
   }
 
