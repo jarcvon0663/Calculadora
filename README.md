@@ -10,3 +10,4 @@ Adicional permite conocer el costo de un empleado sumando el costo por conectivi
 2 de enero de 2024, se actualizan los valores salario mínimo, aux de transporte y salario integral, pendiente actualizar dotación y aux de conectividad
 
 09 de enero 2024, se actualizó ATs 2024
+11 de septiembre de 2024, se incluyen los ATs Locales y los nuevos BY
