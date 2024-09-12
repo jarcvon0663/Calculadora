@@ -80,3 +80,73 @@ button {
   padding-left: 10px;
 }
 
+/* Media query para pantallas de hasta 450px de ancho */
+@media only screen and (max-width: 450px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    padding: 10px;
+    overflow-y: auto; /* Habilita el scroll si el contenido es muy largo */
+  }
+
+  .container {
+    width: 100%;
+    max-width: 450px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  input[type="text"],
+  select {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  #employee-form label {
+    font-size: 24px;
+  }
+  
+  #employee-form .checkbox-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 0.3fr)); /* Ajusta el número de columnas basado en el ancho disponible */
+  gap: 1px; /* Espacio entre las columnas y filas */
+  padding: 1px;
+}
+
+	#employee-form .checkbox-container label {
+	  display: flex;
+	  align-items: center;
+	  font-size: 18px;
+	  padding-right: 1px;
+	  padding-left: 1px;
+	  margin-bottom: 1px;
+	}
+
+	#employee-form .checkbox-container input[type="checkbox"] {
+	  transform: scale(2); /* Aumentar tamaño del checkbox */
+	  margin-right: 1px;
+	}
+
+  
+  #employee-form input[type="checkbox"] {
+    margin-right: 5px;
+	transform: scale(2); /* Ajusta el valor según el tamaño que desees */
+  }
+
+  #currency-converter {
+    margin-top: 20px;
+  }
+}
