@@ -11,3 +11,4 @@ Adicional permite conocer el costo de un empleado sumando el costo por conectivi
 
 09 de enero 2024, se actualizó ATs 2024
 11 de septiembre de 2024, se incluyen los ATs Locales y los nuevos BY
+12 de septiembre de 2024, se ajusta para dispositivos móviles
