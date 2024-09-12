@@ -13,7 +13,7 @@
     <h1>Calculadora de Costos de Empleados</h1>
     <form id="employee-form">
       <label for="salary">Salario:</label>
-      <input type="text" id="salary" name="salary" value="0">
+      <input type="text" id="salary" name="salary" inputmode="numeric" value="">
       <script>
         var salary = document.getElementById("salary");
         var format = new Intl.NumberFormat("es-ES");
@@ -28,7 +28,7 @@
       <input type="checkbox" id="integral" name="integral">
       <br>
       <label for="bonuses">Bonificaciones:</label>
-      <input type="text" id="bonuses" name="bonuses" step="0.01" value="0">
+      <input type="text" id="bonuses" name="bonuses" inputmode="numeric" step="0.01" value="">
       <script>
         var bonuses = document.getElementById("bonuses");
         var format = new Intl.NumberFormat("es-ES");
