@@ -79,34 +79,33 @@
     <div id="result"></div>
     
     <div id="currency-converter">
-      <h3>Conversor de Moneda</h3>
-      <input type="text" id="amount" name="amount" step="0.01" value="0" oninput="convertCurrency()">
-      <select id="fromCurrency" name="fromCurrency">
-        <option value="COP">Peso Colombiano (COP)</option>
-        <option value="MXN">Peso Mexicano (MXN)</option>
-        <option value="USD">Dólar Estadounidense (USD)</option>
-      </select>
-      <select id="toCurrency" name="toCurrency">
-        <option value="MXN">Peso Mexicano (MXN)</option>
-        <option value="COP">Peso Colombiano (COP)</option>
-        <option value="USD">Dólar Estadounidense (USD)</option>
-      </select>
-      <button type="button" onclick="convertCurrency()">Convertir</button>
-      <div id="conversionResult"></div>
-    </div>
-    <script>
+	  <h3>Conversor de Moneda</h3>
+	  <input type="text" id="amount" name="amount" step="0.01" value="0" oninput="convertCurrency()">
+	  <select id="fromCurrency" name="fromCurrency">
+	    <option value="COP">Peso Colombiano (COP)</option>
+	    <option value="USD">Dólar Estadounidense (USD)</option>
+	  </select>
+	  <select id="toCurrency" name="toCurrency">
+	    <option value="USD">Dólar Estadounidense (USD)</option>
+	    <option value="COP">Peso Colombiano (COP)</option>
+	  </select>
+	  <button type="button" onclick="convertCurrency()">Convertir</button>
+	  <div id="conversionResult"></div>
+	</div>
+	
+	<script>
 	  async function convertCurrency() {
-	    const amountInput = document.getElementById('amount');
-	    const fromCurrencySelect = document.getElementById('fromCurrency');
-	    const toCurrencySelect = document.getElementById('toCurrency');
-	    const resultDiv = document.getElementById('conversionResult');
+	    const amountInput = document.getElementById("amount");
+	    const fromCurrencySelect = document.getElementById("fromCurrency");
+	    const toCurrencySelect = document.getElementById("toCurrency");
+	    const resultDiv = document.getElementById("conversionResult");
 	
 	    const amount = parseFloat(amountInput.value);
 	    const fromCurrency = fromCurrencySelect.value;
 	    const toCurrency = toCurrencySelect.value;
 	
 	    if (isNaN(amount) || amount <= 0) {
-	      resultDiv.innerHTML = 'Por favor, ingrese un monto válido.';
+	      resultDiv.innerHTML = "Por favor, ingrese un monto válido.";
 	      return;
 	    }
 	
@@ -116,27 +115,37 @@
 	    }
 	
 	    try {
-	      // Llamada a la API para obtener el tipo de cambio
-	      const response = await fetch(`https://api.exchangerate-api.com/v4/latest/${fromCurrency}`);
-	      if (!response.ok) throw new Error('Error en la respuesta de la API.');
+	      // Obtener la TRM actual de la API de datos abiertos
+	      const response = await fetch("https://www.datos.gov.co/resource/32sa-8pi3.json");
+	      if (!response.ok) throw new Error("Error en la respuesta de la API.");
 	
 	      const data = await response.json();
-	      const exchangeRate = data.rates[toCurrency];
+	      if (!data || data.length === 0) throw new Error("No se encontraron datos de la TRM.");
 	
-	      if (!exchangeRate) throw new Error('No se encontró la tasa de cambio solicitada.');
+	      // La TRM se encuentra en el campo 'valor' del primer registro
+	      const trm = parseFloat(data[0].valor);
+	      if (isNaN(trm)) throw new Error("La TRM obtenida no es válida.");
 	
-	      // Calcular y mostrar el resultado
-	      const convertedAmount = amount * exchangeRate;
-	      const formattedAmount = convertedAmount.toLocaleString('es');
-	      const formattedInput = amount.toLocaleString('es');
+	      let convertedAmount;
+	      if (fromCurrency === "COP" && toCurrency === "USD") {
+	        convertedAmount = amount / trm; // Convertir de COP a USD
+	      } else if (fromCurrency === "USD" && toCurrency === "COP") {
+	        convertedAmount = amount * trm; // Convertir de USD a COP
+	      } else {
+	        throw new Error("Conversión no soportada.");
+	      }
+	
+	      const formattedAmount = convertedAmount.toLocaleString("es", { minimumFractionDigits: 2 });
+	      const formattedInput = amount.toLocaleString("es", { minimumFractionDigits: 2 });
 	
 	      resultDiv.innerHTML = `${formattedInput} ${fromCurrency} equivale a ${formattedAmount} ${toCurrency}`;
 	    } catch (error) {
-	      console.error('Error al obtener el tipo de cambio:', error);
-	      resultDiv.innerHTML = 'Error al obtener el tipo de cambio. Por favor, intente más tarde.';
+	      console.error("Error al realizar la conversión:", error);
+	      resultDiv.innerHTML = "Error al obtener la tasa de cambio. Por favor, intente más tarde.";
 	    }
 	  }
 	</script>
+
     
   </div>
 </body>
