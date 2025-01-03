@@ -13,4 +13,4 @@ Adicional permite conocer el costo de un empleado sumando el costo por conectivi
 11 de septiembre de 2024, se incluyen los ATs Locales y los nuevos BY
 12 de septiembre de 2024, se ajusta para dispositivos móviles y se ajustan los campos numericos con un inputcode
 
-3 de enero de 2025, se actualizan los valores de salario mínimo, auxilio de transporte y salario integral acordes al año 2025
+3 de enero de 2025, se actualizan los valores de salario mínimo, auxilio de transporte y salario integral acordes al año 2025. Se actualiza la conversión de la tasa en dolares al valor actual
