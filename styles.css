@@ -49,9 +49,25 @@ button {
   margin-top: 40px;
 }
 
+input[type="date"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
 #currency-converter h3 {
   font-size: 18px;
   margin-bottom: 10px;
+}
+
+#currency-converter input, 
+#currency-converter select {
+  width: 120px; /* Ajusta este valor según el tamaño que desees */
+  padding: 8px; /* Puedes ajustar el relleno también si lo prefieres */
+  font-size: 14px; /* Ajusta el tamaño de la fuente si es necesario */
+  margin: 5px 0; /* Añade algo de margen para que no se vean tan pegados */
 }
 
 #conversionResult {

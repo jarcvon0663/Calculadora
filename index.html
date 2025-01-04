@@ -2,152 +2,117 @@
 <html>
 
 <head>
-  <title>Calculadora de Costos de Empleados</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="script.js"></script>
+	<title>Calculadora de Costos de Empleados</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="script.js"></script>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Calculadora de Costos de Empleados</h1>
-    <form id="employee-form">
-      <label for="salary">Salario:</label>
-      <input type="text" id="salary" name="salary" inputmode="numeric" value="">
-      <script>
-        var salary = document.getElementById("salary");
-        var format = new Intl.NumberFormat("es-ES");
-        salary.addEventListener("keyup", function (e) {
-          var value = e.target.value.replace(/\./g, "").replace(/,/g, ".");
-          var position = e.target.selectionStart; // guardar la posición del cursor
-          e.target.value = format.format(value);
-          e.target.selectionEnd = position; // restaurar la posición del cursor
-        });
-      </script>
-      <label for="integral">Integral:</label>
-      <input type="checkbox" id="integral" name="integral">
-      <br>
-      <label for="bonuses">Bonificaciones:</label>
-      <input type="text" id="bonuses" name="bonuses" inputmode="numeric" step="0.01" value="">
-      <script>
-        var bonuses = document.getElementById("bonuses");
-        var format = new Intl.NumberFormat("es-ES");
-        bonuses.addEventListener("keyup", function(e) {
-          var value = e.target.value.replace(/\./g, "").replace(/,/g, ".");
-          var position = e.target.selectionStart; // guardar la posición del cursor
-          e.target.value = format.format(value);
-          e.target.selectionEnd = position; // restaurar la posición del cursor
-        });
-      </script>
-      <br>
-      <div class="checkbox-container">
-        <input type="checkbox" id="connectivity-bonus" name="connectivity-bonus">
-        <label for="connectivity-bonus">Conectividad</label>
-   
-        <input type="checkbox" id="sura-policy" name="sura-policy">
-        <label for="sura-policy">Póliza Sura</label>
+	<div class="container">
+		<h1>Calculadora de Costos de Empleados</h1>
+		<form id="employee-form">
+			<label for="integral">Integral:</label>
+			<input type="checkbox" id="integral" name="integral">
+			<label for="salary">Salario:</label>
+			<input type="text" id="salary" name="salary" inputmode="numeric" value="">
+			<script>
+				const salaryInput = document.getElementById("salary");
+				const formatter = new Intl.NumberFormat("es-CO");
+				salaryInput.addEventListener("input", function (e) {
+					// Remover cualquier formato previo
+					const rawValue = e.target.value.replace(/\D/g, "");
+					if (rawValue === "") {
+						e.target.value = "";
+						return;
+					}
+					// Formatear con puntos de mil
+					e.target.value = formatter.format(parseInt(rawValue, 10));
+				});
+			</script>
+			<br>
+			<label for="bonuses">Aux no prestacional:</label>
+			<input type="text" id="bonuses" name="bonuses" inputmode="numeric" value="">
+			<script>
+				const bonusesInput = document.getElementById("bonuses");
+				const formatter2 = new Intl.NumberFormat("es-CO");
+				bonusesInput.addEventListener("input", function (e) {
+					// Remover cualquier formato previo
+					const rawValue = e.target.value.replace(/\D/g, ""); // Solo permitir números
+					if (rawValue === "") {
+						e.target.value = "";
+						return;
+					}
+					// Formatear con puntos de mil
+					e.target.value = formatter2.format(parseInt(rawValue, 10));
+				});
+			</script>
+			<br>
+			<div class="checkbox-container">
+				<input type="checkbox" id="connectivity-bonus" name="connectivity-bonus">
+				<label for="connectivity-bonus">Conectividad</label>
 
-        <input type="checkbox" id="life-insurance" name="life-insurance">
-        <label for="life-insurance">Seguro de vida</label>
-		
-        <input type="checkbox" id="sanitas" name="sanitas">
-        <label for="sanitas">ColSanitas</label>
-      </div>
-      <br>
-	  <label for="department">Práctica:</label>
-		<select id="department" name="department">
-		  <option value="">Seleccione una Práctica</option>
-		  <option value="AMS">AMS</option>
-		  <option value="AMS GDC">AMS GDC</option>
-		  <option value="AMS ARS ERP">AMS ARS ERP</option>
-		  <option value="APP DEV">APP DEV</option>
-		  <option value="APP DEV GDC">APP DEV GDC</option>
-		  <option value="BY">Blue Yonder</option>
-		  <option value="BY GDC">Blue Yonder GDC</option>
-		  <option value="DIGITAL">DIGITAL</option>
-		  <option value="DIGITAL GDC">DIGITAL GDC</option>
-		  <option value="ERP PROY">ERP PROY</option>
-		  <option value="ERP GDC">ERP GDC</option>
-		  <option value="GDC Infosec">GDC Infosec</option>
-		  <option value="ITIS">ITIS</option>
-		  <option value="ITIS GDC">ITIS GDC</option>
-		  <option value="QA&VALIDAT">QA&VALIDAT</option>
-		  <option value="QA&VALIDAT GDC">QA&VALIDAT GDC</option>		  
-		</select>
-      <button type="button" onclick="calculateCost()">Calcular</button>
-    </form>
-    <div id="result"></div>
-    
-    <div id="currency-converter">
-	  <h3>Conversor de Moneda</h3>
-	  <input type="text" id="amount" name="amount" step="0.01" value="0" oninput="convertCurrency()">
-	  <select id="fromCurrency" name="fromCurrency">
-	    <option value="COP">Peso Colombiano (COP)</option>
-	    <option value="USD">Dólar Estadounidense (USD)</option>
-	  </select>
-	  <select id="toCurrency" name="toCurrency">
-	    <option value="USD">Dólar Estadounidense (USD)</option>
-	    <option value="COP">Peso Colombiano (COP)</option>
-	  </select>
-	  <button type="button" onclick="convertCurrency()">Convertir</button>
-	  <div id="conversionResult"></div>
+				<input type="checkbox" id="sura-policy" name="sura-policy">
+				<label for="sura-policy">Póliza Sura</label>
+
+				<input type="checkbox" id="life-insurance" name="life-insurance">
+				<label for="life-insurance">Seguro de vida</label>
+
+				<input type="checkbox" id="sanitas" name="sanitas">
+				<label for="sanitas">ColSanitas</label>
+			</div>
+			<br>
+			<label for="department">Práctica:</label>
+			<select id="department" name="department">
+				<option value="">Seleccione una Práctica</option>
+				<option value="AMS">AMS</option>
+				<option value="AMS GDC">AMS GDC</option>
+				<option value="AMS ARS ERP">AMS ARS ERP</option>
+				<option value="APP DEV">APP DEV</option>
+				<option value="APP DEV GDC">APP DEV GDC</option>
+				<option value="BY">Blue Yonder</option>
+				<option value="BY GDC">Blue Yonder GDC</option>
+				<option value="DIGITAL">DIGITAL</option>
+				<option value="DIGITAL GDC">DIGITAL GDC</option>
+				<option value="ERP PROY">ERP PROY</option>
+				<option value="ERP GDC">ERP GDC</option>
+				<option value="GDC Infosec">GDC Infosec</option>
+				<option value="ITIS">ITIS</option>
+				<option value="ITIS GDC">ITIS GDC</option>
+				<option value="QA&VALIDAT">QA&VALIDAT</option>
+				<option value="QA&VALIDAT GDC">QA&VALIDAT GDC</option>
+				<option value="SALES PERFORMANCE">SALES PERFORMANCE</option>
+			</select>
+			<button type="button" onclick="calculateCost()">Calcular</button>
+		</form>
+		<div id="result"></div>
+
+		<div id="currency-converter">
+			<h3>Conversor de Moneda</h3>
+			<label for="conversionDate">Fecha (opcional):</label>
+			<input type="date" id="conversionDate">
+		  <br>
+			<input type="text" id="amount" name="amount" step="0.01" value="0" oninput="convertCurrency()">
+		  
+			<label for="fromCurrency">De:</label>
+			<select id="fromCurrency" name="fromCurrency">
+			  <option value="COP">COP</option>
+			  <option value="USD">USD</option>
+			</select>
+		  
+			<label for="toCurrency">A:</label>
+			<select id="toCurrency" name="toCurrency">
+			  <option value="USD">USD</option>
+			  <option value="COP">COP</option>
+			</select>
+		  
+			<button type="button" onclick="convertCurrency()">Convertir</button>
+		  
+			<div id="conversionResult"></div>
+		  </div>
+		  
+		  
 	</div>
-	
-	<script>
-	  async function convertCurrency() {
-	    const amountInput = document.getElementById("amount");
-	    const fromCurrencySelect = document.getElementById("fromCurrency");
-	    const toCurrencySelect = document.getElementById("toCurrency");
-	    const resultDiv = document.getElementById("conversionResult");
-	
-	    const amount = parseFloat(amountInput.value);
-	    const fromCurrency = fromCurrencySelect.value;
-	    const toCurrency = toCurrencySelect.value;
-	
-	    if (isNaN(amount) || amount <= 0) {
-	      resultDiv.innerHTML = "Por favor, ingrese un monto válido.";
-	      return;
-	    }
-	
-	    if (fromCurrency === toCurrency) {
-	      resultDiv.innerHTML = `1 ${fromCurrency} equivale a 1 ${toCurrency}. No se requiere conversión.`;
-	      return;
-	    }
-	
-	    try {
-	      // Obtener la TRM actual de la API de datos abiertos
-	      const response = await fetch("https://www.datos.gov.co/resource/32sa-8pi3.json");
-	      if (!response.ok) throw new Error("Error en la respuesta de la API.");
-	
-	      const data = await response.json();
-	      if (!data || data.length === 0) throw new Error("No se encontraron datos de la TRM.");
-	
-	      // La TRM se encuentra en el campo 'valor' del primer registro
-	      const trm = parseFloat(data[0].valor);
-	      if (isNaN(trm)) throw new Error("La TRM obtenida no es válida.");
-	
-	      let convertedAmount;
-	      if (fromCurrency === "COP" && toCurrency === "USD") {
-	        convertedAmount = amount / trm; // Convertir de COP a USD
-	      } else if (fromCurrency === "USD" && toCurrency === "COP") {
-	        convertedAmount = amount * trm; // Convertir de USD a COP
-	      } else {
-	        throw new Error("Conversión no soportada.");
-	      }
-	
-	      const formattedAmount = convertedAmount.toLocaleString("es", { minimumFractionDigits: 2 });
-	      const formattedInput = amount.toLocaleString("es", { minimumFractionDigits: 2 });
-	
-	      resultDiv.innerHTML = `${formattedInput} ${fromCurrency} equivale a ${formattedAmount} ${toCurrency}`;
-	    } catch (error) {
-	      console.error("Error al realizar la conversión:", error);
-	      resultDiv.innerHTML = "Error al obtener la tasa de cambio. Por favor, intente más tarde.";
-	    }
-	  }
-	</script>
-
-    
-  </div>
 </body>
 
 </html>
