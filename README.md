@@ -17,3 +17,5 @@ Adicional permite conocer el costo de un empleado sumando el costo por conectivi
 
 4 de enero de 2025, se actualizan los AT y se incluye un selector de fecha opcional para calcular conversiones de COP a USD con la TRM exacta de la fecha seleccionada.
 
+7 de enero de 2025, se actualiza el valor delbono de conectividad a 72.000
+
