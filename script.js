@@ -2793,7 +2793,7 @@ function calculateCost() {
     cost = Math.ceil(salary * 1.53808 + bonuses);
   }
 
-  if (connectivityBonus) cost += 66000;
+  if (connectivityBonus) cost += 72000;
   if (suraPolicy) cost += 339291;
   if (sanitas) cost += 316400;
   if (lifeInsurance) cost += 24111;
