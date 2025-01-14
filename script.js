@@ -2,19 +2,19 @@
 var atCodes = {
   AMS: [
     {
-      code: "A0681 / Support Engineer - ERP Bg / COP 2219942.4088432",
+      code: "A0681 / Support Engineer - ERP Bg / COP 2219942.40",
       value: 2219942.4088432,
     },
     {
-      code: "A0682 / Support Engineer - ERP Jr / COP 2995506.06519796",
+      code: "A0682 / Support Engineer - ERP Jr / COP 2995506.06",
       value: 2995506.06519796,
     },
     {
-      code: "A0683 / Support Engineer - ERP Pr / COP 3995226.53442599",
+      code: "A0683 / Support Engineer - ERP Pr / COP 3995226.53",
       value: 3995226.53442599,
     },
     {
-      code: "A0671 / Soft Eng Sys Admin - ERP Bg / COP 4127370.40595875",
+      code: "A0671 / Soft Eng Sys Admin - ERP Bg / COP 4127370.40",
       value: 4127370.40595875,
     },
     {
@@ -30,20 +30,20 @@ var atCodes = {
       value: 4945460.61009,
     },
     {
-      code: "A0684 / Support Engineer - ERP  Sr / COP 5178670.46736976",
+      code: "A0684 / Support Engineer - ERP  Sr / COP 5178670.46",
       value: 5178670.46736976,
     },
     {
-      code: "A0421 / Service Manager ARS -  Bg / COP 5414733.97414945",
+      code: "A0421 / Service Manager ARS -  Bg / COP 5414733.97",
       value: 5414733.97414945,
     },
     {
-      code: "A0672 / Soft Eng Sys Admin - ERP Jr / COP 5965413.3845806",
+      code: "A0672 / Soft Eng Sys Admin - ERP Jr / COP 5965413.38",
       value: 5965413.3845806,
     },
     { code: "A0651 / Functional ESP-ERP Bg / COP 6334014", value: 6334014 },
     {
-      code: "A0685 / Support Engineer - ERP  Ex / COP 6535838.0842122",
+      code: "A0685 / Support Engineer - ERP  Ex / COP 6535838.08",
       value: 6535838.0842122,
     },
     {
@@ -55,15 +55,15 @@ var atCodes = {
       value: 7289862.25,
     },
     {
-      code: "A0692 / Tech-Func Lead ERP Jr / COP 8036355.90303",
+      code: "A0692 / Tech-Func Lead ERP Jr / COP 8036355.90",
       value: 8036355.90303,
     },
     {
-      code: "A0422 / Service Manager ARS -  Jr / COP 8189137.37640994",
+      code: "A0422 / Service Manager ARS -  Jr / COP 8189137.37",
       value: 8189137.37640994,
     },
     {
-      code: "A0673 / Soft Eng Sys Admin - ERP Pr / COP 8371578.73841284",
+      code: "A0673 / Soft Eng Sys Admin - ERP Pr / COP 8371578.73",
       value: 8371578.73841284,
     },
     { code: "A0652 / Functional ESP-ERP Jr / COP 9771560", value: 9771560 },
@@ -76,15 +76,15 @@ var atCodes = {
       value: 11041347.4,
     },
     {
-      code: "A0693 / Tech-Func Lead ERP Pr / COP 11322157.99169",
+      code: "A0693 / Tech-Func Lead ERP Pr / COP 11322157.99",
       value: 11322157.99169,
     },
     {
-      code: "A0674 / Soft Eng Sys Admin - ERP Sr / COP 11494580.8539076",
+      code: "A0674 / Soft Eng Sys Admin - ERP Sr / COP 11494580.85",
       value: 11494580.8539076,
     },
     {
-      code: "A0423 / Service Manager ARS -  Pr / COP 11652937.987717",
+      code: "A0423 / Service Manager ARS -  Pr / COP 11652937.98",
       value: 11652937.987717,
     },
     {
@@ -96,7 +96,7 @@ var atCodes = {
       value: 14721626.24,
     },
     {
-      code: "A0694 / Tech-Func Lead ERP Sr / COP 14897606.88416",
+      code: "A0694 / Tech-Func Lead ERP Sr / COP 14897606.88",
       value: 14897606.88416,
     },
     {
@@ -104,11 +104,11 @@ var atCodes = {
       value: 15477886.36,
     },
     {
-      code: "A0675 / Soft Eng Sys Admin - ERP Ex / COP 15585184.1527753",
+      code: "A0675 / Soft Eng Sys Admin - ERP Ex / COP 15585184.15",
       value: 15585184.1527753,
     },
     {
-      code: "A0424 / Service Manager ARS -  Sr / COP 15992777.4914954",
+      code: "A0424 / Service Manager ARS -  Sr / COP 15992777.49",
       value: 15992777.4914954,
     },
     {
@@ -116,60 +116,60 @@ var atCodes = {
       value: 18925253.92,
     },
     {
-      code: "A0695 / Tech-Func Lead ERP Ex / COP 19471332.92106",
+      code: "A0695 / Tech-Func Lead ERP Ex / COP 19471332.92",
       value: 19471332.92106,
     },
     {
-      code: "A0645 / Functional Consultant - ERP Ex / COP 19941695.424",
+      code: "A0645 / Functional Consultant - ERP Ex / COP 19941695.42",
       value: 19941695.424,
     },
     {
-      code: "A0425 / Service Manager ARS -  Ex / COP 21657749.6135187",
+      code: "A0425 / Service Manager ARS -  Ex / COP 21657749.61",
       value: 21657749.6135187,
     },
     {
-      code: "A0665 / Software Engineer - ERP Ex / COP 21739040.904",
+      code: "A0665 / Software Engineer - ERP Ex / COP 21739040.90",
       value: 21739040.904,
     },
     {
-      code: "A0655 / Functional ESP-ERP Ex / COP 24667830.096",
+      code: "A0655 / Functional ESP-ERP Ex / COP 24667830.09",
       value: 24667830.096,
     },
   ],
   "AMS ARS ERP": [
     { code: "A0101 / Technical Writer ARS  Bg / COP 2262624", value: 2262624 },
     {
-      code: "A0451 / Process Quality Leader DD -  Bg / COP 2402164.17792",
+      code: "A0451 / Process Quality Leader DD -  Bg / COP 2402164.17",
       value: 2402164.17792,
     },
     {
-      code: "A0381 / Test Engineer ARS -  Tr / COP 2424221.8182",
+      code: "A0381 / Test Engineer ARS -  Tr / COP 2424221.81",
       value: 2424221.8182,
     },
     { code: "A0102 / Technical Writer ARS  JR / COP 2585856", value: 2585856 },
     { code: "A0103 / Technical Writer ARS  Pr / COP 2909088", value: 2909088 },
     {
-      code: "A0382 / Test Engineer ARS -  Bg / COP 2909142.5454",
+      code: "A0382 / Test Engineer ARS -  Bg / COP 2909142.54",
       value: 2909142.5454,
     },
     {
-      code: "A0091 / Graphical Designer ARS - Web Bg / COP 2929387.02732",
+      code: "A0091 / Graphical Designer ARS - Web Bg / COP 2929387.02",
       value: 2929387.02732,
     },
     {
-      code: "A0231 / Software Designer ARS Bg / COP 2929387.02732",
+      code: "A0231 / Software Designer ARS Bg / COP 2929387.02",
       value: 2929387.02732,
     },
     {
-      code: "A0281 / Software Engineer ARS - Web Tr / COP 3090964.18176",
+      code: "A0281 / Software Engineer ARS - Web Tr / COP 3090964.18",
       value: 3090964.18176,
     },
     {
-      code: "A0291 / Software Engineer ARS - Client Server Tr / COP 3090964.18176",
+      code: "A0291 / Software Engineer ARS - Client Server Tr / COP 3090964.18",
       value: 3090964.18176,
     },
     {
-      code: "A0301 / Software Engineer ARS - Mainframe Tr / COP 3090964.18176",
+      code: "A0301 / Software Engineer ARS - Mainframe Tr / COP 3090964.18",
       value: 3090964.18176,
     },
     {
@@ -177,117 +177,117 @@ var atCodes = {
       value: 3464733.0432,
     },
     {
-      code: "A0383 / Test Engineer ARS -  JR / COP 3709156.29084",
+      code: "A0383 / Test Engineer ARS -  JR / COP 3709156.29",
       value: 3709156.29084,
     },
     {
-      code: "A0452 / Process Quality Leader DD -  Jr / COP 3956390.15616",
+      code: "A0452 / Process Quality Leader DD -  Jr / COP 3956390.15",
       value: 3956390.15616,
     },
     { code: "A0104 / Technical Writer ARS  Sr / COP 4063488", value: 4063488 },
     {
-      code: "A0282 / Software Engineer ARS - Web Bg / COP 4203579.17304",
+      code: "A0282 / Software Engineer ARS - Web Bg / COP 4203579.17",
       value: 4203579.17304,
     },
     {
-      code: "A0292 / Software Engineer ARS - Client Server Bg / COP 4203579.17304",
+      code: "A0292 / Software Engineer ARS - Client Server Bg / COP 4203579.17",
       value: 4203579.17304,
     },
     {
-      code: "A0302 / Software Engineer ARS - Mainframe Bg / COP 4203579.17304",
+      code: "A0302 / Software Engineer ARS - Mainframe Bg / COP 4203579.17",
       value: 4203579.17304,
     },
     {
-      code: "A0384 / Test Engineer ARS -  Pr / COP 4327349.61204",
+      code: "A0384 / Test Engineer ARS -  Pr / COP 4327349.61",
       value: 4327349.61204,
     },
     { code: "A0105 / Technical Writer ARS  Ex / COP 4617600", value: 4617600 },
     {
-      code: "A0092 / Graphical Designer ARS - Web JR / COP 4628431.5031656",
+      code: "A0092 / Graphical Designer ARS - Web JR / COP 4628431.50",
       value: 4628431.5031656,
     },
     {
-      code: "A0232 / Software Designer ARS JR / COP 4628431.5031656",
+      code: "A0232 / Software Designer ARS JR / COP 4628431.50",
       value: 4628431.5031656,
     },
     {
-      code: "A0062 / Business Analyst ARS JR / COP 4662860.09904",
+      code: "A0062 / Business Analyst ARS JR / COP 4662860.09",
       value: 4662860.09904,
     },
     {
-      code: "A0453 / Process Quality Leader DD -  Pr / COP 5357502.8676",
+      code: "A0453 / Process Quality Leader DD -  Pr / COP 5357502.86",
       value: 5357502.8676,
     },
     {
-      code: "A0001 / Project Manager ARS Bg / COP 5828475.44136",
+      code: "A0001 / Project Manager ARS Bg / COP 5828475.44",
       value: 5828475.44136,
     },
     {
-      code: "A0031 / Functional Leader ARS  Bg / COP 5828475.44136",
+      code: "A0031 / Functional Leader ARS  Bg / COP 5828475.44",
       value: 5828475.44136,
     },
     {
-      code: "A0063 / Business Analyst ARS Pr / COP 5828475.44136",
+      code: "A0063 / Business Analyst ARS Pr / COP 5828475.44",
       value: 5828475.44136,
     },
     {
-      code: "A0131 / Technical Leader ARS - Mainframe Bg / COP 5828475.44136",
+      code: "A0131 / Technical Leader ARS - Mainframe Bg / COP 5828475.44",
       value: 5828475.44136,
     },
     {
-      code: "A0283 / Software Engineer ARS - Web JR / COP 6093406.14324",
+      code: "A0283 / Software Engineer ARS - Web JR / COP 6093406.14",
       value: 6093406.14324,
     },
     {
-      code: "A0293 / Software Engineer ARS - Client Server JR / COP 6093406.14324",
+      code: "A0293 / Software Engineer ARS - Client Server JR / COP 6093406.14",
       value: 6093406.14324,
     },
     {
-      code: "A0303 / Software Engineer ARS - Mainframe JR / COP 6093406.14324",
+      code: "A0303 / Software Engineer ARS - Mainframe JR / COP 6093406.14",
       value: 6093406.14324,
     },
     {
-      code: "A0385 / Test Engineer ARS -  Sr / COP 6181736.84856",
+      code: "A0385 / Test Engineer ARS -  Sr / COP 6181736.84",
       value: 6181736.84856,
     },
     {
-      code: "A0111 / Technical Leader ARS - Web Bg / COP 6709742.208",
+      code: "A0111 / Technical Leader ARS - Web Bg / COP 6709742.20",
       value: 6709742.208,
     },
     {
-      code: "A0121 / Technical Leader ARS - Client Server - Oracle Bg / COP 6709742.208",
+      code: "A0121 / Technical Leader ARS - Client Server - Oracle Bg / COP 6709742.20",
       value: 6709742.208,
     },
     {
-      code: "A0032 / Functional Leader ARS  JR / COP 6735198.34416",
+      code: "A0032 / Functional Leader ARS  JR / COP 6735198.34",
       value: 6735198.34416,
     },
     {
-      code: "A0064 / Business Analyst ARS Sr / COP 6735198.34416",
+      code: "A0064 / Business Analyst ARS Sr / COP 6735198.34",
       value: 6735198.34416,
     },
     {
-      code: "A0093 / Graphical Designer ARS - Web Pr / COP 6942647.2547484",
+      code: "A0093 / Graphical Designer ARS - Web Pr / COP 6942647.25",
       value: 6942647.2547484,
     },
     {
-      code: "A0233 / Software Designer ARS Pr / COP 6942647.2547484",
+      code: "A0233 / Software Designer ARS Pr / COP 6942647.25",
       value: 6942647.2547484,
     },
     {
-      code: "A0454 / Process Quality Leader DD -  Sr / COP 7194397.65408",
+      code: "A0454 / Process Quality Leader DD -  Sr / COP 7194397.65",
       value: 7194397.65408,
     },
     {
-      code: "A0002 / Project Manager ARS JR / COP 7512369.63048",
+      code: "A0002 / Project Manager ARS JR / COP 7512369.63",
       value: 7512369.63048,
     },
     {
-      code: "A0132 / Technical Leader ARS - Mainframe JR / COP 7512369.63048",
+      code: "A0132 / Technical Leader ARS - Mainframe JR / COP 7512369.63",
       value: 7512369.63048,
     },
     {
-      code: "A0033 / Functional Leader ARS  Pr / COP 7771366.19688",
+      code: "A0033 / Functional Leader ARS  Pr / COP 7771366.19",
       value: 7771366.19688,
     },
     {
