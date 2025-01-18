@@ -2432,12 +2432,14 @@ function formatInputValue(input) {
   input.value = formatNumber(value);
 }
 
+
 function calculateCost() {
   var salaryInput = document.getElementById("salary");
   var bonusesInput = document.getElementById("bonuses");
+  var subcontractorInput = document.getElementById("subcontractor");
   var salary = parseFloat(salaryInput.value.replace(/\./g, ""));
   var bonuses = parseFloat(bonusesInput.value.replace(/\./g, "")) || 0;
-  var integral = document.getElementById("integral").checked;
+  var isSubcontractor = document.getElementById("toggle-contrato").checked;
   var connectivityBonus = document.getElementById("connectivity-bonus").checked;
   var suraPolicy = document.getElementById("sura-policy").checked;
   var sanitas = document.getElementById("sanitas").checked;
@@ -2447,79 +2449,130 @@ function calculateCost() {
   var smmlv = 1423500; // Salario mínimo
   var transportAllowance = 200000; // Auxilio de transporte
 
-  if (integral && salary <= 18505499) {
-    result.innerHTML =
-      "El salario debe ser superior a $18.505.499 para el régimen integral.";
-    return;
-  }
+  if (isSubcontractor) {
+    // Si es Subcontractor, el costo es el valor ingresado en el input de subcontractor
+    var cost = parseFloat(subcontractorInput.value.replace(/\./g, ""));
+    var departmentSelect = document.getElementById("department");
+    var selectedDepartment = departmentSelect.value;
+    var departmentATs = atCodes[selectedDepartment];
 
-  var maxBonuses = salary * 0.4;
-  if (bonuses > maxBonuses) {
-    result.innerHTML =
-      "Los auxilios no pueden superar el 40% del salario prestacional, es decir: " +
-      formatNumber(maxBonuses);
-    return;
-  }
-
-  var cost = 0;
-  if (integral) {
-    cost = Math.ceil(salary * 1.27135 + bonuses);
-  } else if (salary < 2 * smmlv) {
-    cost = Math.ceil(salary * 1.40308 + transportAllowance + 45000 + bonuses);
-  } else if (salary + bonuses < 10 * smmlv) {
-    cost = Math.ceil(salary * 1.40308 + bonuses);
-  } else {
-    cost = Math.ceil(salary * 1.53808 + bonuses);
-  }
-
-  if (connectivityBonus) cost += 72000;
-  if (suraPolicy) cost += 339291;
-  if (sanitas) cost += 316400;
-  if (lifeInsurance) cost += 24111;
-
-  var departmentSelect = document.getElementById("department");
-  var selectedDepartment = departmentSelect.value;
-  var departmentATs = atCodes[selectedDepartment];
-
-  if (departmentATs && departmentATs.length > 0) {
-    var nextAT = null;
-    for (var i = 0; i < departmentATs.length; i++) {
-      if (departmentATs[i].value > cost) {
-        nextAT = departmentATs[i].code;
-        break;
+    if (departmentATs && departmentATs.length > 0) {
+      var nextAT = null;
+      for (var i = 0; i < departmentATs.length; i++) {
+        if (departmentATs[i].value > cost) {
+          nextAT = departmentATs[i].code;
+          break;
+        }
       }
-    }
-    if (nextAT) {
-      fetch("https://www.datos.gov.co/resource/32sa-8pi3.json")
-        .then((response) => response.json())
-        .then((data) => {
-          var exchangeRate = parseFloat(data[0].valor); // Obtener la tasa de cambio actual
-          // Encontrar el valor asociado al código de AT encontrado
-          var atValue = departmentATs.find((at) => at.code === nextAT).value;
-          var costInUSD = (atValue / exchangeRate).toFixed(2); // Calcular en dólares usando el valor del AT
+      if (nextAT) {
+        fetch("https://www.datos.gov.co/resource/32sa-8pi3.json")
+          .then((response) => response.json())
+          .then((data) => {
+            var exchangeRate = parseFloat(data[0].valor); // Obtener la tasa de cambio actual
+            // Encontrar el valor asociado al código de AT encontrado
+            var atValue = departmentATs.find((at) => at.code === nextAT).value;
+            var costInUSD = (atValue / exchangeRate).toFixed(2); // Calcular en dólares usando el valor del AT
 
-          result.innerHTML = `El costo total del empleado es: $${formatNumber(
-            cost
-          )}. <br> <br>
-			AT para ${selectedDepartment}: ${nextAT}. USD $${costInUSD}.`;
-        })
-        .catch((error) => {
-          console.error("Error al obtener la tasa de cambio:", error);
-          result.innerHTML = `El costo total del empleado es: $${formatNumber(
-            cost
-          )}. <br> <br>
-			 AT para ${selectedDepartment}: ${nextAT}. No se pudo calcular el equivalente en dólares.`;
-        });
+            result.innerHTML = `El costo total del subcontractor es: $${formatNumber(
+              cost
+            )}. <br> <br>
+				AT para ${selectedDepartment}: ${nextAT}. USD $${costInUSD}.`;
+          })
+          .catch((error) => {
+            console.error("Error al obtener la tasa de cambio:", error);
+            result.innerHTML = `El costo total del subcontractor es: $${formatNumber(
+              cost
+            )}. <br> <br>
+				AT para ${selectedDepartment}: ${nextAT}. No se pudo calcular el equivalente en dólares.`;
+          });
+      } else {
+        result.innerHTML = `El costo total del subcontractor es: $${formatNumber(
+          cost
+        )}. No se encontró un AT adecuado para la práctica ${selectedDepartment}.`;
+      }
+
+      var formattedCost = formatNumber(cost).replace(/\./g, "");
+      document.getElementById("amount").value = formattedCost;
+    }
+  } else {
+    // Si no es Subcontractor, calcular el costo como lo hacías antes
+    var cost = 0;
+    var integral = document.getElementById("integral").checked;
+
+    if (integral && salary <= 18505499) {
+      result.innerHTML =
+        "El salario debe ser superior a $18.505.499 para el régimen integral.";
+      return;
+    }
+
+    var maxBonuses = salary * 0.4;
+    if (bonuses > maxBonuses) {
+      result.innerHTML =
+        "Los auxilios no pueden superar el 40% del salario prestacional, es decir: " +
+        formatNumber(maxBonuses);
+      return;
+    }
+
+    if (integral) {
+      cost = Math.ceil(salary * 1.27135 + bonuses);
+    } else if (salary < 2 * smmlv) {
+      cost = Math.ceil(salary * 1.40308 + transportAllowance + 45000 + bonuses);
+    } else if (salary + bonuses < 10 * smmlv) {
+      cost = Math.ceil(salary * 1.40308 + bonuses);
     } else {
-      result.innerHTML = `El costo total del empleado es: $${formatNumber(
-        cost
-      )}. No se encontró un AT adecuado para la práctica ${selectedDepartment}.`;
+      cost = Math.ceil(salary * 1.53808 + bonuses);
     }
 
-    var formattedCost = formatNumber(cost).replace(/\./g, "");
-    document.getElementById("amount").value = formattedCost;
+    if (connectivityBonus) cost += 72000;
+    if (suraPolicy) cost += 339291;
+    if (sanitas) cost += 316400;
+    if (lifeInsurance) cost += 24111;
+
+    var departmentSelect = document.getElementById("department");
+    var selectedDepartment = departmentSelect.value;
+    var departmentATs = atCodes[selectedDepartment];
+
+    if (departmentATs && departmentATs.length > 0) {
+      var nextAT = null;
+      for (var i = 0; i < departmentATs.length; i++) {
+        if (departmentATs[i].value > cost) {
+          nextAT = departmentATs[i].code;
+          break;
+        }
+      }
+      if (nextAT) {
+        fetch("https://www.datos.gov.co/resource/32sa-8pi3.json")
+          .then((response) => response.json())
+          .then((data) => {
+            var exchangeRate = parseFloat(data[0].valor); // Obtener la tasa de cambio actual
+            // Encontrar el valor asociado al código de AT encontrado
+            var atValue = departmentATs.find((at) => at.code === nextAT).value;
+            var costInUSD = (atValue / exchangeRate).toFixed(2); // Calcular en dólares usando el valor del AT
+
+            result.innerHTML = `El costo total del empleado es: $${formatNumber(
+              cost
+            )}. <br> <br>
+				AT para ${selectedDepartment}: ${nextAT}. USD $${costInUSD}.`;
+          })
+          .catch((error) => {
+            console.error("Error al obtener la tasa de cambio:", error);
+            result.innerHTML = `El costo total del empleado es: $${formatNumber(
+              cost
+            )}. <br> <br>
+			 AT para ${selectedDepartment}: ${nextAT}. No se pudo calcular el equivalente en dólares.`;
+          });
+      } else {
+        result.innerHTML = `El costo total del empleado es: $${formatNumber(
+          cost
+        )}. No se encontró un AT adecuado para la práctica ${selectedDepartment}.`;
+      }
+
+      var formattedCost = formatNumber(cost).replace(/\./g, "");
+      document.getElementById("amount").value = formattedCost;
+    }
   }
 }
+
 
 async function convertCurrency() {
   const amountInput = document.getElementById("amount");

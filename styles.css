@@ -3,11 +3,68 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
+  /* Elimina los márgenes por defecto */
   background-color: #f3f3f3;
   color: #1e3a56;
   font-family: Arial, sans-serif;
 }
 
+.check {
+  position: relative;
+  width: 50px;
+  height: 25px;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.check:before {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 17px;
+  background: #333;
+  border-radius: 25px;
+  transition: 0.25s;
+}
+
+/*Interruptor*/
+.contrato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Asegura el centrado horizontal dentro del div */
+  gap: 8px;
+  /* Espaciado entre los elementos */
+  text-align: center;
+}
+
+.check:after {
+  content: '';
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #333;
+  top: 0;
+  left: 0;
+  transition: 0.25s;
+  box-sizing: border-box;
+}
+
+.check:checked:after {
+  left: 17px;
+  border: 2px solid blue;
+}
+
+.check:checked:before {
+  background: blue;
+}
+
+
+/*Inputs*/
 .container {
   text-align: center;
 }
@@ -62,12 +119,16 @@ input[type="date"] {
   margin-bottom: 10px;
 }
 
-#currency-converter input, 
+#currency-converter input,
 #currency-converter select {
-  width: 120px; /* Ajusta este valor según el tamaño que desees */
-  padding: 8px; /* Puedes ajustar el relleno también si lo prefieres */
-  font-size: 14px; /* Ajusta el tamaño de la fuente si es necesario */
-  margin: 5px 0; /* Añade algo de margen para que no se vean tan pegados */
+  width: 120px;
+  /* Ajusta este valor según el tamaño que desees */
+  padding: 8px;
+  /* Puedes ajustar el relleno también si lo prefieres */
+  font-size: 14px;
+  /* Ajusta el tamaño de la fuente si es necesario */
+  margin: 5px 0;
+  /* Añade algo de margen para que no se vean tan pegados */
 }
 
 #conversionResult {
@@ -79,22 +140,28 @@ input[type="date"] {
 #employee-form .checkbox-container {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
-  padding: 40px;
-  
+  margin: 5px 0;
+  /* Reduce el espacio vertical alrededor del contenedor */
+  padding: 5px;
+  /* Reduce el espacio interno */
+  gap: 5px;
+  /* Espaciado entre los elementos internos */
 }
 
 #employee-form .checkbox-container input[type="checkbox"] {
   margin-right: 5px;
-  
+  /* Espaciado más ajustado entre checkbox y etiqueta */
 }
 
 #employee-form .checkbox-container label {
   font-size: 14px;
-  display: inline-block;
-  padding-right: 50px;
-  padding-left: 10px;
+  /* Ajusta el tamaño de texto si es necesario */
+  margin: 0;
+  /* Elimina márgenes extra */
+  padding: 0;
+  /* Elimina rellenos extra */
 }
+
 
 /* Media query para pantallas de hasta 450px de ancho */
 @media only screen and (max-width: 450px) {
@@ -103,7 +170,8 @@ input[type="date"] {
     justify-content: flex-start;
     height: auto;
     padding: 10px;
-    overflow-y: auto; /* Habilita el scroll si el contenido es muy largo */
+    overflow-y: auto;
+    /* Habilita el scroll si el contenido es muy largo */
   }
 
   .container {
@@ -130,37 +198,31 @@ input[type="date"] {
     font-size: 14px;
     padding: 10px;
   }
-  
-  #employee-form label {
-    font-size: 24px;
-  }
-  
+
   #employee-form .checkbox-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 0.3fr)); /* Ajusta el número de columnas basado en el ancho disponible */
-  gap: 1px; /* Espacio entre las columnas y filas */
-  padding: 1px;
-}
-
-	#employee-form .checkbox-container label {
-	  display: flex;
-	  align-items: center;
-	  font-size: 18px;
-	  padding-right: 1px;
-	  padding-left: 1px;
-	  margin-bottom: 1px;
-	}
-
-	#employee-form .checkbox-container input[type="checkbox"] {
-	  transform: scale(2); /* Aumentar tamaño del checkbox */
-	  margin-right: 1px;
-	}
-
-  
-  #employee-form input[type="checkbox"] {
-    margin-right: 5px;
-	transform: scale(2); /* Ajusta el valor según el tamaño que desees */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide el espacio en dos columnas iguales */
+    gap: 8px 16px; /* Espacio entre filas (vertical) y columnas (horizontal) */
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
   }
+  
+  #employee-form .checkbox-container label {
+    display: flex;
+    align-items: center; /* Centra verticalmente el checkbox con el texto */
+    font-size: 14px; /* Tamaño del texto */
+    gap: 8px; /* Espacio entre el checkbox y el texto */
+    margin: 0;
+    justify-content: flex-start; /* Alinea el texto a la izquierda dentro de su celda */
+  }
+  
+  #employee-form .checkbox-container input[type="checkbox"] {
+    transform: scale(1.5); /* Ajusta el tamaño del checkbox */
+    margin: 0; /* Sin margen adicional */
+  }
+  
+
 
   #currency-converter {
     margin-top: 20px;

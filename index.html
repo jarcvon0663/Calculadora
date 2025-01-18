@@ -6,114 +6,151 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="script.js"></script>
+	<script src="interruptor.js"></script>
 </head>
 
 <body>
 	<div class="container">
 		<h1>Calculadora de Costos Softtek 2025</h1>
-		<p>Ult. actualización 16/ENE/2025</p>
-		<form id="employee-form">
-			<label for="integral">Integral:</label>
-			<input type="checkbox" id="integral" name="integral">
-			<label for="salary">Salario:</label>
-			<input type="text" id="salary" name="salary" inputmode="numeric" value="">
-			<script>
-				const salaryInput = document.getElementById("salary");
-				const formatter = new Intl.NumberFormat("es-CO");
-				salaryInput.addEventListener("input", function (e) {
-					// Remover cualquier formato previo
-					const rawValue = e.target.value.replace(/\D/g, "");
-					if (rawValue === "") {
-						e.target.value = "";
-						return;
-					}
-					// Formatear con puntos de mil
-					e.target.value = formatter.format(parseInt(rawValue, 10));
-				});
-			</script>
-			<br>
-			<label for="bonuses">Aux no prestacional:</label>
-			<input type="text" id="bonuses" name="bonuses" inputmode="numeric" value="">
-			<script>
-				const bonusesInput = document.getElementById("bonuses");
-				const formatter2 = new Intl.NumberFormat("es-CO");
-				bonusesInput.addEventListener("input", function (e) {
-					// Remover cualquier formato previo
-					const rawValue = e.target.value.replace(/\D/g, ""); // Solo permitir números
-					if (rawValue === "") {
-						e.target.value = "";
-						return;
-					}
-					// Formatear con puntos de mil
-					e.target.value = formatter2.format(parseInt(rawValue, 10));
-				});
-			</script>
-			<br>
-			<div class="checkbox-container">
-				<input type="checkbox" id="connectivity-bonus" name="connectivity-bonus">
-				<label for="connectivity-bonus">Conectividad</label>
+		<p>Ult. actualización 18/ENE/2025</p>
 
-				<input type="checkbox" id="sura-policy" name="sura-policy">
-				<label for="sura-policy">Póliza Sura</label>
-
-				<input type="checkbox" id="life-insurance" name="life-insurance">
-				<label for="life-insurance">Seguro de vida</label>
-
-				<input type="checkbox" id="sanitas" name="sanitas">
-				<label for="sanitas">ColSanitas</label>
+		<div class="interruptor">
+			<div class="contrato">
+				<span class="es">Nómina</span>
+				<input type="checkbox" class="check" id="toggle-contrato">
+				<span class="es">Subcontractor</span>
 			</div>
 			<br>
-			<label for="department">Práctica:</label>
-			<select id="department" name="department">
-				<option value="">Seleccione una Práctica</option>
-				<option value="AMS">AMS</option>
-				<option value="AMS GDC">AMS GDC</option>
-				<option value="AMS ARS ERP">AMS ARS ERP</option>
-				<option value="APP DEV">APP DEV</option>
-				<option value="APP DEV GDC">APP DEV GDC</option>
-				<option value="BY">Blue Yonder</option>
-				<option value="BY GDC">Blue Yonder GDC</option>
-				<option value="DIGITAL">DIGITAL</option>
-				<option value="DIGITAL GDC">DIGITAL GDC</option>
-				<option value="ERP PROY">ERP PROY</option>
-				<option value="ERP GDC">ERP GDC</option>
-				<option value="GDC Infosec">GDC Infosec</option>
-				<option value="ITIS">ITIS</option>
-				<option value="ITIS GDC">ITIS GDC</option>
-				<option value="QA&VALIDAT">QA&VALIDAT</option>
-				<option value="QA&VALIDAT GDC">QA&VALIDAT GDC</option>
-				<option value="SALES PERFORMANCE">SALES PERFORMANCE</option>
-			</select>
-			<button type="button" onclick="calculateCost()">Calcular</button>
-		</form>
-		<div id="result"></div>
 
-		<div id="currency-converter">
-			<h3>Conversor de Moneda</h3>
-			<label for="conversionDate">Fecha (opcional):</label>
-			<input type="date" id="conversionDate">
-		  <br>
-			<input type="text" id="amount" name="amount" step="0.01" value="0" oninput="convertCurrency()">
-		  
-			<label for="fromCurrency">De:</label>
-			<select id="fromCurrency" name="fromCurrency">
-			  <option value="COP">COP</option>
-			  <option value="USD">USD</option>
-			</select>
-		  
-			<label for="toCurrency">A:</label>
-			<select id="toCurrency" name="toCurrency">
-			  <option value="USD">USD</option>
-			  <option value="COP">COP</option>
-			</select>
-		  
-			<button type="button" onclick="convertCurrency()">Convertir</button>
-		  
-			<div id="conversionResult"></div>
-		  </div>
-		  
-		  
-	</div>
+			<form id="employee-form">
+				<!-- Inputs para Nómina -->
+				<div id="nomina-inputs">
+					<label for="integral">Integral:</label>
+					<input type="checkbox" id="integral" name="integral">
+
+					<label for="salary">Salario:</label>
+					<input type="text" id="salary" name="salary" inputmode="numeric" value="">
+					<script>
+						const salaryInput = document.getElementById("salary");
+						const formatter = new Intl.NumberFormat("es-CO");
+						salaryInput.addEventListener("input", function (e) {
+							// Remover cualquier formato previo
+							const rawValue = e.target.value.replace(/\D/g, "");
+							if (rawValue === "") {
+								e.target.value = "";
+								return;
+							}
+							// Formatear con puntos de mil
+							e.target.value = formatter.format(parseInt(rawValue, 10));
+						});
+					</script>
+					<br>
+					<label for="bonuses">Aux no prestacional:</label>
+					<input type="text" id="bonuses" name="bonuses" inputmode="numeric" value="">
+					<script>
+						const bonusesInput = document.getElementById("bonuses");
+						const formatter2 = new Intl.NumberFormat("es-CO");
+						bonusesInput.addEventListener("input", function (e) {
+							// Remover cualquier formato previo
+							const rawValue = e.target.value.replace(/\D/g, ""); // Solo permitir números
+							if (rawValue === "") {
+								e.target.value = "";
+								return;
+							}
+							// Formatear con puntos de mil
+							e.target.value = formatter2.format(parseInt(rawValue, 10));
+						});
+					</script>
+				</div>
+
+				<!-- Input para Subcontractor -->
+				<div id="subcontractor-input" style="display: none;">
+					<label for="subcontractor">Subcontractor:</label>
+					<input type="text" id="subcontractor" name="subcontractor">
+					<script>
+						const subcontractorInput = document.getElementById("subcontractor");
+						const formatter3 = new Intl.NumberFormat("es-CO");
+						subcontractorInput.addEventListener("input", function (e) {
+							// Remover cualquier formato previo
+							const rawValue = e.target.value.replace(/\D/g, ""); // Solo permitir números
+							if (rawValue === "") {
+								e.target.value = "";
+								return;
+							}
+							// Formatear con puntos de mil
+							e.target.value = formatter2.format(parseInt(rawValue, 10));
+						});
+					</script>
+				</div>
+
+
+
+				<br>
+				<div class="checkbox-container" id="checkbox-container">
+					<input type="checkbox" id="connectivity-bonus" name="connectivity-bonus">
+					<label for="connectivity-bonus">Conectividad</label>
+
+					<input type="checkbox" id="sura-policy" name="sura-policy">
+					<label for="sura-policy">Póliza Sura</label>
+
+					<input type="checkbox" id="life-insurance" name="life-insurance">
+					<label for="life-insurance">Seguro de vida</label>
+
+					<input type="checkbox" id="sanitas" name="sanitas">
+					<label for="sanitas">ColSanitas</label>
+				</div>
+				<br>
+				<label for="department">Práctica:</label>
+				<select id="department" name="department">
+					<option value="">Seleccione una Práctica</option>
+					<option value="AMS">AMS</option>
+					<option value="AMS GDC">AMS GDC</option>
+					<option value="AMS ARS ERP">AMS ARS ERP</option>
+					<option value="APP DEV">APP DEV</option>
+					<option value="APP DEV GDC">APP DEV GDC</option>
+					<option value="BY">Blue Yonder</option>
+					<option value="BY GDC">Blue Yonder GDC</option>
+					<option value="DIGITAL">DIGITAL</option>
+					<option value="DIGITAL GDC">DIGITAL GDC</option>
+					<option value="ERP PROY">ERP PROY</option>
+					<option value="ERP GDC">ERP GDC</option>
+					<option value="GDC Infosec">GDC Infosec</option>
+					<option value="ITIS">ITIS</option>
+					<option value="ITIS GDC">ITIS GDC</option>
+					<option value="QA&VALIDAT">QA&VALIDAT</option>
+					<option value="QA&VALIDAT GDC">QA&VALIDAT GDC</option>
+					<option value="SALES PERFORMANCE">SALES PERFORMANCE</option>
+				</select>
+				<button type="button" onclick="calculateCost()">Calcular</button>
+			</form>
+			<div id="result"></div>
+
+			<div id="currency-converter">
+				<h3>Conversor de Moneda</h3>
+				<label for="conversionDate">Fecha (opcional):</label>
+				<input type="date" id="conversionDate">
+				<br>
+				<input type="text" id="amount" name="amount" step="0.01" value="0" oninput="convertCurrency()">
+
+				<label for="fromCurrency">De:</label>
+				<select id="fromCurrency" name="fromCurrency">
+					<option value="COP">COP</option>
+					<option value="USD">USD</option>
+				</select>
+
+				<label for="toCurrency">A:</label>
+				<select id="toCurrency" name="toCurrency">
+					<option value="USD">USD</option>
+					<option value="COP">COP</option>
+				</select>
+
+				<button type="button" onclick="convertCurrency()">Convertir</button>
+
+				<div id="conversionResult"></div>
+			</div>
+
+
+		</div>
 </body>
 
 </html>
