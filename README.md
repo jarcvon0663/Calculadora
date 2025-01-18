@@ -19,3 +19,4 @@ Adicional permite conocer el costo de un empleado sumando el costo por conectivi
 
 7 de enero de 2025, se actualiza el valor delbono de conectividad a 72.000
 16 de enero de 2025. se actualizaron los AT de "AMS" y "AMS ARS ERP" y el titulo de la página. Se añade indicador de última actualización
+18 de enero 2025, se incluye el interruptor para calcular los subcontractor
