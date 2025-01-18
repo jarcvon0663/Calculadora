@@ -120,479 +120,479 @@ var atCodes = {
   ],
   "AMS GDC": [
     {
-      code: "A0681 / Support Engineer - ERP Bg / COP 2662477.95305697",
+      code: "A0681 / Support Engineer - ERP Bg / COP 2662477.95",
       value: 2662477.95305697,
     },
     {
-      code: " A0682 / Support Engineer - ERP Jr / COP 3549977.37150072",
+      code: " A0682 / Support Engineer - ERP Jr / COP 3549977.37",
       value: 3549977.37150072,
     },
     {
-      code: "A0600 / Support Engineer ARS - Mainframe Tr / COP 3630913.98927469",
+      code: "A0600 / Support Engineer ARS - Mainframe Tr / COP 3630913.98",
       value: 3630913.98927469,
     },
     {
-      code: "A0431 / Support Engineer ARS - Client Server - Oracle Tr / COP 3679529.48261719",
+      code: "A0431 / Support Engineer ARS - Client Server - Oracle Tr / COP 3679529.48",
       value: 3679529.48261719,
     },
     {
-      code: "A0610 / Support Engineer ARS - WEB Tr / COP 3772282.92435885",
+      code: "A0610 / Support Engineer ARS - WEB Tr / COP 3772282.92",
       value: 3772282.92435885,
     },
     {
-      code: "A0661 / Software Engineer - ERP Bg / COP 3925769.815485",
+      code: "A0661 / Software Engineer - ERP Bg / COP 3925769.81",
       value: 3925769.815485,
     },
     {
-      code: "A0400 / System Analyst ARS -  Tr / COP 3930388.33546219",
+      code: "A0400 / System Analyst ARS -  Tr / COP 3930388.33",
       value: 3930388.33546219,
     },
     {
-      code: "A0641 / Functional Consultant - ERP Bg / COP 4141687.15533667",
+      code: "A0641 / Functional Consultant - ERP Bg / COP 4141687.15",
       value: 4141687.15533667,
     },
     {
-      code: "A0671 / Soft Eng Sys Admin - ERP Bg / COP 4703754.16856412",
+      code: "A0671 / Soft Eng Sys Admin - ERP Bg / COP 4703754.16",
       value: 4703754.16856412,
     },
     {
-      code: "A0940 / System Engineer Tr / COP 5120439.4960108",
+      code: "A0940 / System Engineer Tr / COP 5120439.49",
       value: 5120439.4960108,
     },
     {
-      code: "A0620 / Process Quality Leader RD -  Tr / COP 5151884.81854272",
+      code: "A0620 / Process Quality Leader RD -  Tr / COP 5151884.81",
       value: 5151884.81854272,
     },
     {
-      code: "A0683 / Support Engineer - ERP Pr / COP 5177071.23994718",
+      code: "A0683 / Support Engineer - ERP Pr / COP 5177071.23",
       value: 5177071.23994718,
     },
     {
-      code: "A0611 / Support Engineer ARS - WEB Bg / COP 5212120.21616347",
+      code: "A0611 / Support Engineer ARS - WEB Bg / COP 5212120.21",
       value: 5212120.21616347,
     },
     {
-      code: "A0401 / System Analyst ARS -  Bg / COP 5436799.68494969",
+      code: "A0401 / System Analyst ARS -  Bg / COP 5436799.68",
       value: 5436799.68494969,
     },
     {
-      code: "A0920 / Practice Specialist Tr / COP 5813622.94701372",
+      code: "A0920 / Practice Specialist Tr / COP 5813622.94",
       value: 5813622.94701372,
     },
     {
-      code: "A0930 / Technical Consultant Tr / COP 5860352.98175217",
+      code: "A0930 / Technical Consultant Tr / COP 5860352.98",
       value: 5860352.98175217,
     },
     {
-      code: "A0691 / Tech-Func Lead ERP Bg / COP 5916662.789625",
+      code: "A0691 / Tech-Func Lead ERP Bg / COP 5916662.78",
       value: 5916662.789625,
     },
     {
-      code: "A0651 / Functional ESP-ERP Bg / COP 5916675.21958884",
+      code: "A0651 / Functional ESP-ERP Bg / COP 5916675.21",
       value: 5916675.21958884,
     },
     {
-      code: "A0662 / Software Engineer - ERP JR / COP 6656231.13670364",
+      code: "A0662 / Software Engineer - ERP JR / COP 6656231.13",
       value: 6656231.13670364,
     },
     {
-      code: "A0684 / Support Engineer - ERP  Sr / COP 6656231.13670364",
+      code: "A0684 / Support Engineer - ERP  Sr / COP 6656231.13",
       value: 6656231.13670364,
     },
     {
-      code: "A0642 / Functional Consultant - ERP Jr / COP 6952046.87423551",
+      code: "A0642 / Functional Consultant - ERP Jr / COP 6952046.87",
       value: 6952046.87423551,
     },
     {
-      code: "A0432 / Support Engineer ARS - Client Server - Oracle Bg / COP 6975284.27730927",
+      code: "A0432 / Support Engineer ARS - Client Server - Oracle Bg / COP 6975284.27",
       value: 6975284.27730927,
     },
     {
-      code: "A0612 / Support Engineer ARS - WEB Jr / COP 7111741.66338234",
+      code: "A0612 / Support Engineer ARS - WEB Jr / COP 7111741.66",
       value: 7111741.66338234,
     },
     {
-      code: "A0402 / System Analyst ARS -  Jr / COP 7207807.67477909",
+      code: "A0402 / System Analyst ARS -  Jr / COP 7207807.67",
       value: 7207807.67477909,
     },
     {
-      code: "A0621 / Process Quality Leader RD -  Bg / COP 7399964.35033419",
+      code: "A0621 / Process Quality Leader RD -  Bg / COP 7399964.35",
       value: 7399964.35033419,
     },
     {
-      code: "A0941 / System Engineer Bg / COP 7685030.0336358",
+      code: "A0941 / System Engineer Bg / COP 7685030.03",
       value: 7685030.0336358,
     },
     {
-      code: "A0931 / Technical Consultant Bg / COP 7932011.55071653",
+      code: "A0931 / Technical Consultant Bg / COP 7932011.55",
       value: 7932011.55071653,
     },
     {
-      code: "A0601 / Support Engineer ARS - Mainframe Bg / COP 8103296.03815128",
+      code: "A0601 / Support Engineer ARS - Mainframe Bg / COP 8103296.03",
       value: 8103296.03815128,
     },
     {
-      code: "A0685 / Support Engineer - ERP  Ex / COP 8135440.33898334",
+      code: "A0685 / Support Engineer - ERP  Ex / COP 8135440.33",
       value: 8135440.33898334,
     },
     {
-      code: "A0672 / Soft Eng Sys Admin - ERP Jr / COP 8388335.61852881",
+      code: "A0672 / Soft Eng Sys Admin - ERP Jr / COP 8388335.61",
       value: 8388335.61852881,
     },
     {
-      code: "A0921 / Practice Specialist Bg / COP 8526647.76237343",
+      code: "A0921 / Practice Specialist Bg / COP 8526647.76",
       value: 8526647.76237343,
     },
     {
-      code: "A0421 / Service Manager ARS -  Bg / COP 8780743.7764262",
+      code: "A0421 / Service Manager ARS -  Bg / COP 8780743.77",
       value: 8780743.7764262,
     },
     {
-      code: "A0403 / System Analyst ARS -  Pr / COP 8884778.43047711",
+      code: "A0403 / System Analyst ARS -  Pr / COP 8884778.43",
       value: 8884778.43047711,
     },
     {
-      code: "A0622 / Process Quality Leader RD -  Jr / COP 8969092.32539171",
+      code: "A0622 / Process Quality Leader RD -  Jr / COP 8969092.32",
       value: 8969092.32539171,
     },
     {
-      code: "A0613 / Support Engineer ARS - WEB Pr / COP 9161399.81784146",
+      code: "A0613 / Support Engineer ARS - WEB Pr / COP 9161399.81",
       value: 9161399.81784146,
     },
     {
-      code: "A0433 / Support Engineer ARS - Client Server - Oracle Jr / COP 9258143.05510162",
+      code: "A0433 / Support Engineer ARS - Client Server - Oracle Jr / COP 9258143.05",
       value: 9258143.05510162,
     },
     {
-      code: "A0692 / Tech-Func Lead ERP Jr / COP 9614575.58297818",
+      code: "A0692 / Tech-Func Lead ERP Jr / COP 9614575.58",
       value: 9614575.58297818,
     },
     {
-      code: "A0942 / System Engineer Jr / COP 10307928.7029876",
+      code: "A0942 / System Engineer Jr / COP 10307928.70",
       value: 10307928.7029876,
     },
     {
-      code: "A0623 / Process Quality Leader RD -  Pr / COP 10352716.2516586",
+      code: "A0623 / Process Quality Leader RD -  Pr / COP 10352716.25",
       value: 10352716.2516586,
     },
     {
-      code: "A0404 / System Analyst ARS -  Sr / COP 10391666.8834101",
+      code: "A0404 / System Analyst ARS -  Sr / COP 10391666.88",
       value: 10391666.8834101,
     },
     {
-      code: "A0932 / Technical Consultant Jr / COP 10410559.5997884",
+      code: "A0932 / Technical Consultant Jr / COP 10410559.59",
       value: 10410559.5997884,
     },
     {
-      code: "A0422 / Service Manager ARS -  Jr / COP 10709525.7695136",
+      code: "A0422 / Service Manager ARS -  Jr / COP 10709525.76",
       value: 10709525.7695136,
     },
     {
-      code: "A0434 / Support Engineer ARS - Client Server - Oracle Pr / COP 10781692.5419855",
+      code: "A0434 / Support Engineer ARS - Client Server - Oracle Pr / COP 10781692.54",
       value: 10781692.5419855,
     },
     {
-      code: "A0673 / Soft Eng Sys Admin - ERP Pr / COP 10827097.2850204",
+      code: "A0673 / Soft Eng Sys Admin - ERP Pr / COP 10827097.28",
       value: 10827097.2850204,
     },
     {
-      code: "A0663 / Software Engineer - ERP Pr / COP 11017802.1911903",
+      code: "A0663 / Software Engineer - ERP Pr / COP 11017802.19",
       value: 11017802.1911903,
     },
     {
-      code: "A0614 / Support Engineer ARS - WEB Sr / COP 11155848.5633711",
+      code: "A0614 / Support Engineer ARS - WEB Sr / COP 11155848.56",
       value: 11155848.5633711,
     },
     {
-      code: "A0922 / Practice Specialist Jr / COP 11220956.8073027",
+      code: "A0922 / Practice Specialist Jr / COP 11220956.80",
       value: 11220956.8073027,
     },
     {
-      code: "A0643 / Functional Consultant - ERP Pr / COP 11582809.9117662",
+      code: "A0643 / Functional Consultant - ERP Pr / COP 11582809.91",
       value: 11582809.9117662,
     },
     {
-      code: "A0652 / Functional ESP-ERP Jr / COP 12006549.3314132",
+      code: "A0652 / Functional ESP-ERP Jr / COP 12006549.33",
       value: 12006549.3314132,
     },
     {
-      code: "A0405 / System Analyst ARS -  Ex / COP 12201201.8223947",
+      code: "A0405 / System Analyst ARS -  Ex / COP 12201201.82",
       value: 12201201.8223947,
     },
     {
-      code: "A0943 / System Engineer Pr / COP 12341369.769173",
+      code: "A0943 / System Engineer Pr / COP 12341369.76",
       value: 12341369.769173,
     },
     {
-      code: "A0933 / Technical Consultant Pr / COP 12464191.2124207",
+      code: "A0933 / Technical Consultant Pr / COP 12464191.21",
       value: 12464191.2124207,
     },
     {
-      code: "A0602 / Support Engineer ARS - Mainframe Jr / COP 12564662.7258842",
+      code: "A0602 / Support Engineer ARS - Mainframe Jr / COP 12564662.72",
       value: 12564662.7258842,
     },
     {
-      code: "A0423 / Service Manager ARS -  Pr / COP 12674515.1442586",
+      code: "A0423 / Service Manager ARS -  Pr / COP 12674515.14",
       value: 12674515.1442586,
     },
     {
-      code: "A0693 / Tech-Func Lead ERP Pr / COP 12935508.0319318",
+      code: "A0693 / Tech-Func Lead ERP Pr / COP 12935508.03",
       value: 12935508.0319318,
     },
     {
-      code: "A0435 / Support Engineer ARS - Client Server - Oracle Sr / COP 12969754.4718184",
+      code: "A0435 / Support Engineer ARS - Client Server - Oracle Sr / COP 12969754.47",
       value: 12969754.4718184,
     },
     {
-      code: "A0624 / Process Quality Leader RD -  Sr / COP 13019959.2817468",
+      code: "A0624 / Process Quality Leader RD -  Sr / COP 13019959.28",
       value: 13019959.2817468,
     },
     {
-      code: "A0664 / Software Engineer - ERP Sr / COP 13616333.2373896",
+      code: "A0664 / Software Engineer - ERP Sr / COP 13616333.23",
       value: 13616333.2373896,
     },
     {
-      code: "A0615 / Support Engineer ARS - WEB Ex / COP 13966733.8288622",
+      code: "A0615 / Support Engineer ARS - WEB Ex / COP 13966733.82",
       value: 13966733.8288622,
     },
     {
-      code: "A0923 / Practice Specialist Pr / COP 14181311.389764",
+      code: "A0923 / Practice Specialist Pr / COP 14181311.38",
       value: 14181311.389764,
     },
     {
-      code: "A0424 / Service Manager ARS -  Sr / COP 14688681.7278847",
+      code: "A0424 / Service Manager ARS -  Sr / COP 14688681.72",
       value: 14688681.7278847,
     },
     {
-      code: "A0944 / System Engineer Sr / COP 14696870.2233343",
+      code: "A0944 / System Engineer Sr / COP 14696870.22",
       value: 14696870.2233343,
     },
     {
-      code: "A0934 / Technical Consultant Sr / COP 14843151.1400076",
+      code: "A0934 / Technical Consultant Sr / COP 14843151.14",
       value: 14843151.1400076,
     },
     {
-      code: "A0406 / System Analyst ARS -  Ma / COP 15245895.8943552",
+      code: "A0406 / System Analyst ARS -  Ma / COP 15245895.89",
       value: 15245895.8943552,
     },
     {
-      code: "A0625 / Process Quality Leader RD -  Ex / COP 15302291.5870132",
+      code: "A0625 / Process Quality Leader RD -  Ex / COP 15302291.58",
       value: 15302291.5870132,
     },
     {
-      code: "A0653 / Functional ESP-ERP Pr / COP 15658798.0471409",
+      code: "A0653 / Functional ESP-ERP Pr / COP 15658798.04",
       value: 15658798.0471409,
     },
     {
-      code: "A0674 / Soft Eng Sys Admin - ERP Sr / COP 15726878.5589263",
+      code: "A0674 / Soft Eng Sys Admin - ERP Sr / COP 15726878.55",
       value: 15726878.5589263,
     },
     {
-      code: "A0644 / Functional Consultant - ERP Sr / COP 16339591.3412791",
+      code: "A0644 / Functional Consultant - ERP Sr / COP 16339591.34",
       value: 16339591.3412791,
     },
     {
-      code: "A0436 / Support Engineer ARS - Client Server - Oracle Ex / COP 16699225.6828374",
+      code: "A0436 / Support Engineer ARS - Client Server - Oracle Ex / COP 16699225.68",
       value: 16699225.6828374,
     },
     {
-      code: "A0694 / Tech-Func Lead ERP Sr / COP 17020417.8816726",
+      code: "A0694 / Tech-Func Lead ERP Sr / COP 17020417.88",
       value: 17020417.8816726,
     },
     {
-      code: "A0626 / Process Quality Leader RD -  Ma / COP 17619443.5685177",
+      code: "A0626 / Process Quality Leader RD -  Ma / COP 17619443.56",
       value: 17619443.5685177,
     },
     {
-      code: "A0924 / Practice Specialist Sr / COP 17692019.9416741",
+      code: "A0924 / Practice Specialist Sr / COP 17692019.94",
       value: 17692019.9416741,
     },
     {
-      code: "A0616 / Support Engineer ARS - WEB Ma / COP 17743156.7987026",
+      code: "A0616 / Support Engineer ARS - WEB Ma / COP 17743156.79",
       value: 17743156.7987026,
     },
     {
-      code: "A0665 / Software Engineer - ERP Ex / COP 17780763.7333043",
+      code: "A0665 / Software Engineer - ERP Ex / COP 17780763.73",
       value: 17780763.7333043,
     },
     {
-      code: "A0954 / Service Director Sr / COP 17824448.3056717",
+      code: "A0954 / Service Director Sr / COP 17824448.30",
       value: 17824448.3056717,
     },
     {
-      code: "A0945 / System Engineer Ex / COP 18014946.2968115",
+      code: "A0945 / System Engineer Ex / COP 18014946.29",
       value: 18014946.2968115,
     },
     {
-      code: "A0425 / Service Manager ARS -  Ex / COP 18079873.413676",
+      code: "A0425 / Service Manager ARS -  Ex / COP 18079873.41",
       value: 18079873.413676,
     },
     {
-      code: "A0935 / Technical Consultant Ex / COP 18194256.1920329",
+      code: "A0935 / Technical Consultant Ex / COP 18194256.19",
       value: 18194256.1920329,
     },
     {
-      code: "A0695 / Tech-Func Lead ERP Ex / COP 19756410.0305661",
+      code: "A0695 / Tech-Func Lead ERP Ex / COP 19756410.03",
       value: 19756410.0305661,
     },
     {
-      code: "A0645 / Functional Consultant - ERP Ex / COP 20414980.7479025",
+      code: "A0645 / Functional Consultant - ERP Ex / COP 20414980.74",
       value: 20414980.7479025,
     },
     {
-      code: "A0675 / Soft Eng Sys Admin - ERP Ex / COP 20744254.4851447",
+      code: "A0675 / Soft Eng Sys Admin - ERP Ex / COP 20744254.48",
       value: 20744254.4851447,
     },
     {
-      code: "A0437 / Support Engineer ARS - Client Server - Oracle Ma / COP 20913719.4106425",
+      code: "A0437 / Support Engineer ARS - Client Server - Oracle Ma / COP 20913719.41",
       value: 20913719.4106425,
     },
     {
-      code: "A0654 / Functional ESP-ERP Sr / COP 21274184.9323451",
+      code: "A0654 / Functional ESP-ERP Sr / COP 21274184.93",
       value: 21274184.9323451,
     },
     {
-      code: "A0946 / System Engineer Ma / COP 21404516.7656019",
+      code: "A0946 / System Engineer Ma / COP 21404516.76",
       value: 21404516.7656019,
     },
     {
-      code: "A0955 / Service Director Ex / COP 21455117.7457639",
+      code: "A0955 / Service Director Ex / COP 21455117.74",
       value: 21455117.7457639,
     },
     {
-      code: "A0936 / Technical Consultant Ma / COP 21617585.2815278",
+      code: "A0936 / Technical Consultant Ma / COP 21617585.28",
       value: 21617585.2815278,
     },
     {
-      code: "A0925 / Practice Specialist Ex / COP 22210364.5236241",
+      code: "A0925 / Practice Specialist Ex / COP 22210364.52",
       value: 22210364.5236241,
     },
     {
-      code: "A0603 / Support Engineer ARS - Mainframe Pr / COP 22750939.828125",
+      code: "A0603 / Support Engineer ARS - Mainframe Pr / COP 22750939.82",
       value: 22750939.828125,
     },
     {
-      code: "A0426 / Service Manager ARS -  Ma / COP 22770101.4690056",
+      code: "A0426 / Service Manager ARS -  Ma / COP 22770101.46",
       value: 22770101.4690056,
     },
     {
-      code: "A0604 / Support Engineer ARS - Mainframe Sr / COP 24841566.73125",
+      code: "A0604 / Support Engineer ARS - Mainframe Sr / COP 24841566.73",
       value: 24841566.73125,
     },
     {
-      code: "A0655 / Functional ESP-ERP Ex / COP 24841566.73125",
+      code: "A0655 / Functional ESP-ERP Ex / COP 24841566.73",
       value: 24841566.73125,
     },
     {
-      code: "A0956 / Service Director Ma / COP 26090639.8750072",
+      code: "A0956 / Service Director Ma / COP 26090639.87",
       value: 26090639.8750072,
     },
     {
-      code: "A0926 / Practice Specialist Ma / COP 27008958.5027845",
+      code: "A0926 / Practice Specialist Ma / COP 27008958.50",
       value: 27008958.5027845,
     },
     {
-      code: "A0605 / Support Engineer ARS - Mainframe Ex / COP 30603088.5201562",
+      code: "A0605 / Support Engineer ARS - Mainframe Ex / COP 30603088.52",
       value: 30603088.5201562,
     },
     {
-      code: "A0606 / Support Engineer ARS - Mainframe Ma / COP 35663635.40625",
+      code: "A0606 / Support Engineer ARS - Mainframe Ma / COP 35663635.40",
       value: 35663635.40625,
     }
   ],
   "APP DEV": [
     { code: "A0281 / Soft Eng ARS-Web Tr / COP 2400000", value: 2400000 },
     {
-      code: "A0091 / Graph Des ARS-Web Bg / COP 2843149.7709648",
+      code: "A0091 / Graph Des ARS-Web Bg / COP 2843149.77",
       value: 2843149.7709648,
     },
     {
-      code: "A0451 / Proc Qty Lead DD Bg / COP 3242924.227488",
+      code: "A0451 / Proc Qty Lead DD Bg / COP 3242924.22",
       value: 3242924.227488,
     },
     {
-      code: "A0061 / Busin Analyst ARS Bg / COP 3547686.38763264",
+      code: "A0061 / Busin Analyst ARS Bg / COP 3547686.38",
       value: 3547686.38763264,
     },
     {
-      code: "A0282 / Soft Eng ARS-Web Bg / COP 4304222.12204741",
+      code: "A0282 / Soft Eng ARS-Web Bg / COP 4304222.12",
       value: 4304222.12204741,
     },
     {
-      code: "A0301 / Soft Eng ARS-MF Tr / COP 4343992.884",
+      code: "A0301 / Soft Eng ARS-MF Tr / COP 4343992.88",
       value: 4343992.884,
     },
     {
-      code: "A0092 / Graph Des ARS-Web Jr / COP 4739246.35322123",
+      code: "A0092 / Graph Des ARS-Web Jr / COP 4739246.35",
       value: 4739246.35322123,
     },
     {
-      code: "A0452 / Proc Qty Lead DD Jr / COP 5032601.4539328",
+      code: "A0452 / Proc Qty Lead DD Jr / COP 5032601.45",
       value: 5032601.4539328,
     },
     {
-      code: "A0302 / Soft Eng ARS-MF Bg / COP 5585133.708",
+      code: "A0302 / Soft Eng ARS-MF Bg / COP 5585133.70",
       value: 5585133.708,
     },
     {
-      code: "A0001 / Proj Manag ARS Bg. / COP 5968021.98788347",
+      code: "A0001 / Proj Manag ARS Bg. / COP 5968021.98",
       value: 5968021.98788347,
     },
     {
-      code: "A0031 / Funct Leader ARS Bg / COP 5968021.98788347",
+      code: "A0031 / Funct Leader ARS Bg / COP 5968021.98",
       value: 5968021.98788347,
     },
     {
-      code: "A0131 / Te Lead ARS-Mainf Bg / COP 5968021.98788347",
+      code: "A0131 / Te Lead ARS-Mainf Bg / COP 5968021.98",
       value: 5968021.98788347,
     },
     {
-      code: "A0062 / Busin Analyst ARS Jr / COP 6028398.288",
+      code: "A0062 / Busin Analyst ARS Jr / COP 6028398.28",
       value: 6028398.288,
     },
     { code: "A0231 / Soft Designer ARS Bg / COP 6119000", value: 6119000 },
     {
-      code: "A0283 / Soft Eng ARS-Web Jr / COP 6239295.71460545",
+      code: "A0283 / Soft Eng ARS-Web Jr / COP 6239295.71",
       value: 6239295.71460545,
     },
     {
-      code: "A0111 / Tech Lead ARS-Web Bg / COP 6870388.2230016",
+      code: "A0111 / Tech Lead ARS-Web Bg / COP 6870388.22",
       value: 6870388.2230016,
     },
     {
-      code: "A0063 / Busin Analyst ARS Pr / COP 7053225.99696",
+      code: "A0063 / Busin Analyst ARS Pr / COP 7053225.99",
       value: 7053225.99696,
     },
     {
-      code: "A0093 / Graph Des ARS-Web Pr / COP 7108869.52983184",
+      code: "A0093 / Graph Des ARS-Web Pr / COP 7108869.52",
       value: 7108869.52983184,
     },
     {
-      code: "A0002 / Proj Manag ARS Jr / COP 7279077.05818171",
+      code: "A0002 / Proj Manag ARS Jr / COP 7279077.05",
       value: 7279077.05818171,
     },
     {
-      code: "A0032 / Funct Leader ARS Jr / COP 7279077.05818171",
+      code: "A0032 / Funct Leader ARS Jr / COP 7279077.05",
       value: 7279077.05818171,
     },
     {
-      code: "A0453 / Proc Qty Lead DD Pr / COP 7328641.056",
+      code: "A0453 / Proc Qty Lead DD Pr / COP 7328641.05",
       value: 7328641.056,
     },
     {
-      code: "A0303 / Soft Eng ARS-MF Jr / COP 7446844.944",
+      code: "A0303 / Soft Eng ARS-MF Jr / COP 7446844.94",
       value: 7446844.944,
     },
     {
-      code: "A0132 / Te Lead ARS-Mainf Jr / COP 7692232.3147597",
+      code: "A0132 / Te Lead ARS-Mainf Jr / COP 7692232.31",
       value: 7692232.3147597,
     },
     {
-      code: "A0121 / Tech Lead ARS-C S Bg / COP 7900946.45645184",
+      code: "A0121 / Tech Lead ARS-C S Bg / COP 7900946.45",
       value: 7900946.45645184,
     },
     {
-      code: "A0064 / Busin Analyst ARS Sr / COP 8252274.4164432",
+      code: "A0064 / Busin Analyst ARS Sr / COP 8252274.41",
       value: 8252274.4164432,
     },
     {
@@ -600,56 +600,56 @@ var atCodes = {
       value: 8274272.16,
     },
     {
-      code: "A1212 / Soft Eng-Web Spec Jr / COP 8510679.936",
+      code: "A1212 / Soft Eng-Web Spec Jr / COP 8510679.93",
       value: 8510679.936,
     },
     {
-      code: "A0112 / Tech Lead ARS-Web Jr / COP 8519281.39652198",
+      code: "A0112 / Tech Lead ARS-Web Jr / COP 8519281.39",
       value: 8519281.39652198,
     },
     {
-      code: "A0003 / Proj Manag ARS Pr / COP 8878144.70632307",
+      code: "A0003 / Proj Manag ARS Pr / COP 8878144.70",
       value: 8878144.70632307,
     },
     {
-      code: "A0033 / Funct Leader ARS Pr / COP 8878144.70632307",
+      code: "A0033 / Funct Leader ARS Pr / COP 8878144.70",
       value: 8878144.70632307,
     },
     { code: "A0082 / Specialized Cons Jr / COP 9073000", value: 9073000 },
     {
-      code: "A0284 / Soft Eng ARS-Web Pr / COP 9114958.06970919",
+      code: "A0284 / Soft Eng ARS-Web Pr / COP 9114958.06",
       value: 9114958.06970919,
     },
     {
-      code: "A0454 / Proc Qty Lead DD Sr / COP 9404301.32928",
+      code: "A0454 / Proc Qty Lead DD Sr / COP 9404301.32",
       value: 9404301.32928,
     },
     {
-      code: "A0065 / Busin Analyst ARS Ex / COP 9655161.06723854",
+      code: "A0065 / Busin Analyst ARS Ex / COP 9655161.06",
       value: 9655161.06723854,
     },
     {
-      code: "A0122 / Tech Lead ARS-C S Jr / COP 9797173.60600028",
+      code: "A0122 / Tech Lead ARS-C S Jr / COP 9797173.60",
       value: 9797173.60600028,
     },
     {
-      code: "A0304 / Soft Eng ARS-MF Pr / COP 9929126.592",
+      code: "A0304 / Soft Eng ARS-MF Pr / COP 9929126.59",
       value: 9929126.592,
     },
     {
-      code: "A0094 / Graph Des ARS-Web Sr / COP 9952417.34176457",
+      code: "A0094 / Graph Des ARS-Web Sr / COP 9952417.34",
       value: 9952417.34176457,
     },
     {
-      code: "A0133 / Te Lead ARS-Mainf Pr / COP 10689502.6383475",
+      code: "A0133 / Te Lead ARS-Mainf Pr / COP 10689502.63",
       value: 10689502.6383475,
     },
     {
-      code: "A0004 / Proj Manag ARS Sr / COP 10828495.5354081",
+      code: "A0004 / Proj Manag ARS Sr / COP 10828495.53",
       value: 10828495.5354081,
     },
     {
-      code: "A0034 / Funct Leader ARS Sr / COP 10828495.5354081",
+      code: "A0034 / Funct Leader ARS Sr / COP 10828495.53",
       value: 10828495.5354081,
     },
     {
@@ -657,7 +657,7 @@ var atCodes = {
       value: 11199257.55,
     },
     {
-      code: "A0113 / Tech Lead ARS-Web Pr / COP 11509540.0356873",
+      code: "A0113 / Tech Lead ARS-Web Pr / COP 11509540.03",
       value: 11509540.0356873,
     },
     {
@@ -666,55 +666,55 @@ var atCodes = {
     },
     { code: "A0455 / Proc Qty Lead DD Ex / COP 11820388.8", value: 11820388.8 },
     {
-      code: "A0123 / Tech Lead ARS-C S Pr / COP 12056796.576",
+      code: "A0123 / Tech Lead ARS-C S Pr / COP 12056796.57",
       value: 12056796.576,
     },
     {
-      code: "A1213 / Soft Eng-Web Spec Pr / COP 12056796.576",
+      code: "A1213 / Soft Eng-Web Spec Pr / COP 12056796.57",
       value: 12056796.576,
     },
     {
-      code: "A0285 / Soft Eng ARS-Web Sr / COP 12163215.5363664",
+      code: "A0285 / Soft Eng ARS-Web Sr / COP 12163215.53",
       value: 12163215.5363664,
     },
     {
-      code: "A0181 / Softw Archit ARS Bg / COP 12766019.904",
+      code: "A0181 / Softw Archit ARS Bg / COP 12766019.90",
       value: 12766019.904,
     },
     {
-      code: "A0114 / Tech Lead ARS-Web Sr / COP 13099247.0752922",
+      code: "A0114 / Tech Lead ARS-Web Sr / COP 13099247.07",
       value: 13099247.0752922,
     },
     {
-      code: "A0035 / Funct Leader ARS Ex / COP 13207299.4346266",
+      code: "A0035 / Funct Leader ARS Ex / COP 13207299.43",
       value: 13207299.4346266,
     },
     {
-      code: "A0005 / Proj Manag ARS Ex / COP 13207299.4346266",
+      code: "A0005 / Proj Manag ARS Ex / COP 13207299.43",
       value: 13207299.4346266,
     },
     {
-      code: "A0305 / Soft Eng ARS-MF Sr / COP 13404320.8992",
+      code: "A0305 / Soft Eng ARS-MF Sr / COP 13404320.89",
       value: 13404320.8992,
     },
     {
-      code: "A0095 / Graph Des ARS-Web Ex / COP 13784249.4748763",
+      code: "A0095 / Graph Des ARS-Web Ex / COP 13784249.47",
       value: 13784249.4748763,
     },
     {
-      code: "A0084 / Specialized Cons Sr / COP 13823803.5568425",
+      code: "A0084 / Specialized Cons Sr / COP 13823803.55",
       value: 13823803.5568425,
     },
     {
-      code: "A0286 / Soft Eng ARS-Web Ex / COP 14323433.7647136",
+      code: "A0286 / Soft Eng ARS-Web Ex / COP 14323433.76",
       value: 14323433.7647136,
     },
     {
-      code: "A0134 / Te Lead ARS-Mainf Sr / COP 14634852.6287423",
+      code: "A0134 / Te Lead ARS-Mainf Sr / COP 14634852.62",
       value: 14634852.6287423,
     },
     {
-      code: "A0182 / Softw Archit ARS Jr / COP 14936243.28768",
+      code: "A0182 / Softw Archit ARS Jr / COP 14936243.28",
       value: 14936243.28768,
     },
     {
@@ -726,23 +726,23 @@ var atCodes = {
       value: 15957524.88,
     },
     {
-      code: "A0306 / Soft Eng ARS-MF Ex / COP 16134830.712",
+      code: "A0306 / Soft Eng ARS-MF Ex / COP 16134830.71",
       value: 16134830.712,
     },
     {
-      code: "A0085 / Specialized Cons Ex / COP 17063411.9203885",
+      code: "A0085 / Specialized Cons Ex / COP 17063411.92",
       value: 17063411.9203885,
     },
     {
-      code: "A0115 / Tech Lead ARS-Web Ex / COP 17306901.3653623",
+      code: "A0115 / Tech Lead ARS-Web Ex / COP 17306901.36",
       value: 17306901.3653623,
     },
     {
-      code: "A0183 / Softw Archit ARS Pr / COP 17475404.6465856",
+      code: "A0183 / Softw Archit ARS Pr / COP 17475404.64",
       value: 17475404.6465856,
     },
     {
-      code: "A0135 / Te Lead ARS-Mainf Ex / COP 18570313.9182747",
+      code: "A0135 / Te Lead ARS-Mainf Ex / COP 18570313.91",
       value: 18570313.9182747,
     },
     {
@@ -754,11 +754,11 @@ var atCodes = {
       value: 20094660.96,
     },
     {
-      code: "A0184 / Softw Archit ARS Sr / COP 20446223.4365052",
+      code: "A0184 / Softw Archit ARS Sr / COP 20446223.43",
       value: 20446223.4365052,
     },
     {
-      code: "A1215 / Soft Eng-Web Spec Ex / COP 20922088.176",
+      code: "A1215 / Soft Eng-Web Spec Ex / COP 20922088.17",
       value: 20922088.176,
     },
     {
@@ -766,105 +766,105 @@ var atCodes = {
       value: 23640777.6,
     },
     {
-      code: "A0185 / Softw Archit ARS Ex / COP 23922081.420711",
+      code: "A0185 / Softw Archit ARS Ex / COP 23922081.42",
       value: 23922081.420711,
     }
   ],
   "APP DEV GDC": [
     {
-      code: "A0451 / Proc Qty Lead DD Bg / COP 4901252.35776",
+      code: "A0451 / Proc Qty Lead DD Bg / COP 4901252.35",
       value: 4901252.35776,
     },
     {
-      code: "A0131 / Te Lead ARS-Mainf Bg / COP 6222582.16746144",
+      code: "A0131 / Te Lead ARS-Mainf Bg / COP 6222582.16",
       value: 6222582.16746144,
     },
     {
-      code: "A0111 / Tech Lead ARS-Web Bg / COP 7900946.45645184",
+      code: "A0111 / Tech Lead ARS-Web Bg / COP 7900946.45",
       value: 7900946.45645184,
     },
     {
-      code: "A0132 / Te Lead ARS-Mainf Jr / COP 8461455.54623567",
+      code: "A0132 / Te Lead ARS-Mainf Jr / COP 8461455.54",
       value: 8461455.54623567,
     },
     {
-      code: "A0452 / Proc Qty Lead DD Jr / COP 8532757.65936",
+      code: "A0452 / Proc Qty Lead DD Jr / COP 8532757.65",
       value: 8532757.65936,
     },
     {
-      code: "A0121 / Tech Lead ARS-C S Bg / COP 8691041.10209702",
+      code: "A0121 / Tech Lead ARS-C S Bg / COP 8691041.10",
       value: 8691041.10209702,
     },
     {
-      code: "A1212 / Soft Eng-Web Spec Jr / COP 9787281.9264",
+      code: "A1212 / Soft Eng-Web Spec Jr / COP 9787281.92",
       value: 9787281.9264,
     },
     {
-      code: "A0112 / Tech Lead ARS-Web Jr / COP 9797173.60600028",
+      code: "A0112 / Tech Lead ARS-Web Jr / COP 9797173.60",
       value: 9797173.60600028,
     },
     {
-      code: "A0453 / Proc Qty Lead DD Pr / COP 10313649.07584",
+      code: "A0453 / Proc Qty Lead DD Pr / COP 10313649.07",
       value: 10313649.07584,
     },
     {
-      code: "A0122 / Tech Lead ARS-C S Jr / COP 10776890.9666003",
+      code: "A0122 / Tech Lead ARS-C S Jr / COP 10776890.96",
       value: 10776890.9666003,
     },
     {
-      code: "A0133 / Te Lead ARS-Mainf Pr / COP 11758452.9021823",
+      code: "A0133 / Te Lead ARS-Mainf Pr / COP 11758452.90",
       value: 11758452.9021823,
     },
     {
-      code: "A0454 / Proc Qty Lead DD Sr / COP 12970827.91488",
+      code: "A0454 / Proc Qty Lead DD Sr / COP 12970827.91",
       value: 12970827.91488,
     },
     {
-      code: "A0113 / Tech Lead ARS-Web Pr / COP 13235971.0410403",
+      code: "A0113 / Tech Lead ARS-Web Pr / COP 13235971.04",
       value: 13235971.0410403,
     },
     {
-      code: "A0123 / Tech Lead ARS-C S Pr / COP 13262476.2336",
+      code: "A0123 / Tech Lead ARS-C S Pr / COP 13262476.23",
       value: 13262476.2336,
     },
     {
-      code: "A1213 / Soft Eng-Web Spec Pr / COP 13865316.0624",
+      code: "A1213 / Soft Eng-Web Spec Pr / COP 13865316.06",
       value: 13865316.0624,
     },
     {
-      code: "A0114 / Tech Lead ARS-Web Sr / COP 15064134.136586",
+      code: "A0114 / Tech Lead ARS-Web Sr / COP 15064134.13",
       value: 15064134.136586,
     },
     {
-      code: "A0455 / Proc Qty Lead DD Ex / COP 15244547.1024",
+      code: "A0455 / Proc Qty Lead DD Ex / COP 15244547.10",
       value: 15244547.1024,
     },
     {
-      code: "A0134 / Te Lead ARS-Mainf Sr / COP 16098337.8916165",
+      code: "A0134 / Te Lead ARS-Mainf Sr / COP 16098337.89",
       value: 16098337.8916165,
     },
     {
-      code: "A0124 / Tech Lead ARS-C S Sr / COP 16903155.984",
+      code: "A0124 / Tech Lead ARS-C S Sr / COP 16903155.98",
       value: 16903155.984,
     },
     {
-      code: "A1214 / Soft Eng-Web Spec Sr / COP 18351153.612",
+      code: "A1214 / Soft Eng-Web Spec Sr / COP 18351153.61",
       value: 18351153.612,
     },
     {
-      code: "A0115 / Tech Lead ARS-Web Ex / COP 19902936.5701667",
+      code: "A0115 / Tech Lead ARS-Web Ex / COP 19902936.57",
       value: 19902936.5701667,
     },
     {
-      code: "A0135 / Te Lead ARS-Mainf Ex / COP 20427345.3101022",
+      code: "A0135 / Te Lead ARS-Mainf Ex / COP 20427345.31",
       value: 20427345.3101022,
     },
     {
-      code: "A0125 / Tech Lead ARS-C S Ex / COP 22104127.056",
+      code: "A0125 / Tech Lead ARS-C S Ex / COP 22104127.05",
       value: 22104127.056,
     },
     {
-      code: "A1215 / Soft Eng-Web Spec Ex / COP 24060401.4024",
+      code: "A1215 / Soft Eng-Web Spec Ex / COP 24060401.40",
       value: 24060401.4024,
     }
   ],
